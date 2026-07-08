@@ -318,4 +318,129 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
+// NIVEL 1: RENDER DE PROYECTOS INTEGRALES EN LA GRILLA DE CATEGORÍA
+function renderizarGrillaProyectos(proyectosAVisualizar) {
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divGrilla = document.createElement('div');
+    divGrilla.className = 'grid-proyectos';
+
+    proyectosAVisualizar.forEach(proy => {
+        const primeraPub = proy.publicaciones[0];
+        if (!primeraPub) return;
+
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'proyecto-tarjeta';
+        // Al clickear en CUALQUIER PARTE de la tarjeta (incluida la foto de portada), se entra al proyecto
+        tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
+
+        tarjeta.innerHTML = `
+            <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}">
+            <div class="pub-ano">${primeraPub.año}</div>
+            <h3>${primeraPub.titulo}</h3>
+            <div class="pub-tags">${primeraPub.tags.join(' / ')}</div>
+            <div class="line-clamp-preview">
+                ${primeraPub.descripcionES} <span class="mas-link">[+]</span>
+            </div>
+        `;
+        divGrilla.appendChild(tarjeta);
+    });
+
+    contenedor.appendChild(divGrilla);
+}
+
+// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO
+function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divGrilla = document.createElement('div');
+    divGrilla.className = 'grid-proyectos';
+
+    publicacionesFiltradas.forEach(item => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'proyecto-tarjeta';
+        tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
+
+        tarjeta.innerHTML = `
+            <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}">
+            <div class="pub-ano">${item.pub.año}</div>
+            <h3>${item.pub.titulo}</h3>
+            <div class="pub-tags">${item.pub.tags.join(' / ')}</div>
+            <div class="line-clamp-preview">
+                ${item.pub.descripcionES} <span class="mas-link">[+]</span>
+            </div>
+        `;
+        divGrilla.appendChild(tarjeta);
+    });
+
+    contenedor.appendChild(divGrilla);
+}
+
+// NIVEL 2: VISTA INTERNA DEL PROYECTO
+function verProyecto(idProyecto) {
+    const proy = listaProyectos.find(p => p.id === idProyecto);
+    if (!proy) return;
+
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.remove('hidden');
+
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divProyecto = document.createElement('div');
+    divProyecto.className = 'proyecto-interno';
+    
+    let contenidoHTML = '';
+
+    proy.publicaciones.forEach(pub => {
+        // AQUÍ SÍ: Le agregamos de forma exclusiva el atributo data-lightbox a las imágenes de ADENTRO
+        let mediaRenderizado = pub.mediaHTML;
+        if (mediaRenderizado && mediaRenderizado.includes('<img')) {
+            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true"');
+        }
+
+        contenidoHTML += `
+            <div class="publicacion-item">
+                <div class="pub-ano">${pub.año}</div>
+                <div class="pub-titulo-interno">${pub.titulo}</div>
+                <div class="pub-tags">${pub.tags.join(' / ')}</div>
+                
+                <div class="descripcion-bloque-es">${pub.descripcionES}</div>
+                <div class="descripcion-bloque-en">${pub.descripcionEN}</div>
+                
+                <div class="pub-media-container">
+                    ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
+                </div>
+            </div>
+        `;
+    });
+
+    divProyecto.innerHTML = contenidoHTML;
+    contenedor.appendChild(divProyecto);
+    window.scrollTo(0,0);
+}
+
+// CONTROLADOR DEL LIGHTBOX (Solo reacciona a las fotos internas)
+document.addEventListener('click', function(event) {
+    if (event.target.hasAttribute('data-lightbox')) {
+        const urlImagen = event.target.getAttribute('src');
+        const modal = document.getElementById('lightbox-modal');
+        const imagenModal = document.getElementById('lightbox-img');
+        
+        if (modal && imagenModal) {
+            imagenModal.src = urlImagen;
+            modal.className = 'lightbox-visible';
+        }
+    }
+});
+
+function cerrarImagen() {
+    const modal = document.getElementById('lightbox-modal');
+    if (modal) {
+        modal.className = 'lightbox-hidden';
+    }
+}
+
 irAHome();
