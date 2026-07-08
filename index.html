@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanda Acevedo</title>
-    <link rel="stylesheet" href="style.css?v=1.3">
+    <link rel="stylesheet" href="style.css?v=1.4">
 </head>
 <body>
 
     <div class="interface-container">
         
-        <!-- COLUMNA IZQUIERDA: MENÚ FIJO ESTILO ÁRBOL -->
+        <!-- COLUMNA IZQUIERDA: MENÚ FIJO CON BLOQUES -->
         <aside class="sidebar">
             <div class="brand" onclick="irAHome()">
                 <h2>Wanda Acevedo</h2>
             </div>
             
             <nav class="menu-group">
-                <a href="#" onclick="mostrarInfo()" class="menu-root main-link">Info / Bio</a>
+                <a href="#" onclick="mostrarInfo()" class="menu-root-box">■ Biografía <span class="en-menu">| Biography</span></a>
             </nav>
 
             <nav class="menu-group">
-                <span class="menu-root">Trabajo <span class="en-menu">| Work</span></span>
-                <div class="tree-branch">
-                    <a href="#" onclick="filtrarCategoria('comercial')">├── Comercial / Marcas <span class="en-menu">| Comercial / Brands</span></a>
-                    <a href="#" onclick="filtrarCategoria('freelance')">└── Freelance <span class="en-menu">| Freelance</span></a>
+                <span class="menu-root-box">■ Trabajo <span class="en-menu">| Work</span></span>
+                <div class="tree-branch-box">
+                    <a href="#" onclick="filtrarCategoria('comercial')">▪ Marcas <span class="en-menu">/ Brands</span></a>
+                    <a href="#" onclick="filtrarCategoria('freelance')">▪ Freelance <span class="en-menu">Freelance</span></a>
                 </div>
             </nav>
 
             <nav class="menu-group">
-                <span class="menu-root">Proyectos <span class="en-menu">| Proyectos</span></span>
-                <div class="tree-branch">
-                    <a href="#" onclick="filtrarCategoria('audiovisual')">├── Audiovisual <span class="en-menu">| Audiovisual</span></a>
-                    <a href="#" onclick="filtrarCategoria('instalaciones')">├── Instalaciones <span class="en-menu">| Art Installations</span></a>
-                    <a href="#" onclick="filtrarCategoria('diseno')">├── Diseño Gráfico <span class="en-menu">| Graphic Design</span></a>
-                    <a href="#" onclick="filtrarCategoria('fotografia')">└── Fotografía <span class="en-menu">| Photography</span></a>
+                <span class="menu-root-box">■ Proyectos <span class="en-menu">| Proyectos</span></span>
+                <div class="tree-branch-box">
+                    <a href="#" onclick="filtrarCategoria('audiovisual')">▪ Audiovisual <span class="en-menu">| Audiovisual</span></a>
+                    <a href="#" onclick="filtrarCategoria('instalaciones')">▪ Instalaciones <span class="en-menu">| Art Installations</span></a>
+                    <a href="#" onclick="filtrarCategoria('diseno')">▪ Diseño Gráfico <span class="en-menu">| Graphic Design</span></a>
+                    <a href="#" onclick="filtrarCategoria('fotografia')">▪ Fotografía <span class="en-menu">| Photography</span></a>
                 </div>
             </nav>
         </aside>
@@ -46,11 +46,13 @@
             <section id="filtros-comerciales" class="hidden">
                 <div class="grupo-filtro">
                     <span class="filtro-label">Filtros / Filters:</span>
-                    <button onclick="filtrarPorMetadato('tag', 'todos')">Todos / All</button>
-                    <button onclick="filtrarPorMetadato('tag', 'Short Form')">Short Form</button>
-                    <button onclick="filtrarPorMetadato('tag', 'Motion Graphics')">Motion Graphics</button>
-                    <button onclick="filtrarPorMetadato('tag', 'UX/UI')">UX/UI</button>
-                    <button onclick="filtrarPorMetadato('tag', 'Branding')">Branding</button>
+                    <button onclick="filtrarCategoria('comercial')">Todos / All</button>
+                    <button onclick="filtrarPorMetadato('Short Form')">Short Form</button>
+                    <button onclick="filtrarPorMetadato('Motion Graphics')">Motion Graphics</button>
+                    <button onclick="filtrarPorMetadato('UX/UI')">UX/UI</button>
+                    <button onclick="filtrarPorMetadato('Branding')">Branding</button>
+                    <button onclick="filtrarPorMetadato('Color Grading')">Color Grading</button>
+                    <button onclick="filtrarPorMetadato('AI Tools')">AI Tools</button>
                 </div>
             </section>
 
