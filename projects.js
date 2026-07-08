@@ -161,25 +161,40 @@ const textoBio = `
     </div>
 `;
 
-let categoriaActual = 'todos';
+let categoriaActual = 'ninguna';
 
+// Al ir al Home o refrescar, el contenedor dinámico queda totalmente vacío.
+// Solo se cargará contenido cuando el usuario elija una categoría del menú.
 function irAHome() {
-    document.getElementById('filtros-comerciales').classList.add('hidden');
-    document.getElementById('back-button-container').classList.add('hidden');
-    // Al ir al Home, renderizamos todos los proyectos de la lista en lugar de dejarlo en blanco
-    renderizarGrillaProyectos(listaProyectos);
+    categoriaActual = 'ninguna';
+    if(document.getElementById('filtros-comerciales')) {
+        document.getElementById('filtros-comerciales').classList.add('hidden');
+    }
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.add('hidden');
+    }
+    document.getElementById('dynamic-content').innerHTML = '';
 }
 
 function mostrarInfo() {
-    document.getElementById('filtros-comerciales').classList.add('hidden');
-    document.getElementById('back-button-container').classList.add('hidden');
+    if(document.getElementById('filtros-comerciales')) {
+        document.getElementById('filtros-comerciales').classList.add('hidden');
+    }
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.add('hidden');
+    }
     document.getElementById('dynamic-content').innerHTML = textoBio;
 }
 
-// NIVEL 1: RENDER DE PROYECTOS INTEGRALES EN LA GRILLA DE CATEGORÍA
+// NIVEL 1: RENDER DE LA GRILLA DE PROYECTOS PERTENECIENTES A LA CATEGORÍA SELECCIONADA
 function renderizarGrillaProyectos(proyectosAVisualizar) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
+
+    if (proyectosAVisualizar.length === 0) {
+        contenedor.innerHTML = '<div style="padding:20px; color:#666;">No hay proyectos en esta categoría.</div>';
+        return;
+    }
 
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
@@ -207,7 +222,7 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO
+// RENDER CUANDO SE FILTRA POR METADATO/TAG INTERNO (DENTRO DE COMERCIAL/MARCAS)
 function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -235,13 +250,17 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 2: VISTA INTERNA DEL PROYECTO
+// NIVEL 2: VISTA INTERNA DETALLADA DEL PROYECTO
 function verProyecto(idProyecto) {
     const proy = listaProyectos.find(p => p.id === idProyecto);
     if (!proy) return;
 
-    document.getElementById('filtros-comerciales').classList.add('hidden');
-    document.getElementById('back-button-container').classList.remove('hidden');
+    if(document.getElementById('filtros-comerciales')) {
+        document.getElementById('filtros-comerciales').classList.add('hidden');
+    }
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.remove('hidden');
+    }
 
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -279,30 +298,49 @@ function verProyecto(idProyecto) {
 }
 
 function volverALaGrilla() {
-    document.getElementById('back-button-container').classList.add('hidden');
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.add('hidden');
+    }
     filtrarCategoria(categoriaActual);
 }
 
+// ESTA FUNCIÓN MANEJA EL CLIC EN TUS CATEGORÍAS
 function filtrarCategoria(cat) {
-    categoriaActual = cat;
-    document.getElementById('back-button-container').classList.add('hidden');
+    // Normalizamos para evitar errores de mayúsculas o acentos en los llamados
+    let catNormalizada = cat.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     
-    if (cat === 'comercial') {
-        document.getElementById('filtros-comerciales').classList.remove('hidden');
-    } else {
-        document.getElementById('filtros-comerciales').classList.add('hidden');
+    // Mapeo por si en el HTML usas "marcas" o "comercial" indistintamente
+    if (catNormalizada === 'marcas' || catNormalizada === 'comercial') {
+        catNormalizada = 'comercial';
+    }
+    if (catNormalizada === 'diseno grafico') {
+        catNormalizada = 'diseno';
     }
 
-    if (cat === 'todos') {
-        renderizarGrillaProyectos(listaProyectos);
-    } else {
-        const filtrados = listaProyectos.filter(p => p.categoria === cat);
-        renderizarGrillaProyectos(filtrados);
+    categoriaActual = catNormalizada;
+    
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.add('hidden');
     }
+    
+    const panelFiltrosComerciales = document.getElementById('filtros-comerciales');
+    if (panelFiltrosComerciales) {
+        if (catNormalizada === 'comercial') {
+            panelFiltrosComerciales.classList.remove('hidden');
+        } else {
+            panelFiltrosComerciales.classList.add('hidden');
+        }
+    }
+
+    // Buscamos y renderizamos solo los proyectos que pertenezcan a dicha categoría
+    const filtrados = listaProyectos.filter(p => p.categoria === catNormalizada);
+    renderizarGrillaProyectos(filtrados);
 }
 
 function filtrarPorMetadato(tagBuscado) {
-    document.getElementById('back-button-container').classList.add('hidden');
+    if(document.getElementById('back-button-container')) {
+        document.getElementById('back-button-container').classList.add('hidden');
+    }
     let publicacionesCoincidentes = [];
 
     listaProyectos.forEach(proy => {
@@ -322,7 +360,7 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
-// CONTROLADOR DEL LIGHTBOX GLOBAL
+// LIGHTBOX GLOBAL
 document.addEventListener('click', function(event) {
     if (event.target.hasAttribute('data-lightbox')) {
         const urlImagen = event.target.getAttribute('src');
@@ -343,5 +381,5 @@ function cerrarImagen() {
     }
 }
 
-// Al iniciar el archivo, cargamos directamente la vista Home con todos los proyectos visibles
+// AL INICIAR: Arrancamos con la vista limpia (Home vacía). Solo se ve el menú.
 irAHome();
