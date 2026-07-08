@@ -10,7 +10,6 @@
 
     <div class="interface-container">
         
-        <!-- COLUMNA IZQUIERDA: MENÚ FIJO CON BLOQUES -->
         <aside class="sidebar">
             <div class="brand" onclick="irAHome()">
                 <h2>Wanda Acevedo</h2>
@@ -39,10 +38,8 @@
             </nav>
         </aside>
 
-        <!-- COLUMNA DERECHA: CONTENIDO DINÁMICO -->
         <main class="content-area">
             
-            <!-- FILTROS EXCLUSIVOS PARA TRABAJOS COMERCIALES -->
             <section id="filtros-comerciales" class="hidden">
                 <div class="grupo-filtro">
                     <span class="filtro-label">Filtros / Filters:</span>
@@ -56,16 +53,19 @@
                 </div>
             </section>
 
-            <!-- BOTÓN VOLVER ATRÁS -->
             <div id="back-button-container" class="hidden">
                 <button class="back-button" onclick="volverALaGrilla()">← volver / back</button>
             </div>
 
-            <!-- CONTENEDOR PRINCIPAL -->
             <div id="dynamic-content"></div>
             
         </main>
 
+    </div>
+
+    <div id="lightbox-modal" class="hidden" onclick="cerrarImagen()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Pantalla Completa">
     </div>
 
     <script src="projects.js"></script>
