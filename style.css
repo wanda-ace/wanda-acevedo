@@ -12,15 +12,14 @@ body {
     color: #000000;
 }
 
-/* DISEÑO DE DOS COLUMNAS */
 .interface-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* MENÚ LATERAL IZQUIERDO (FIJO) */
+/* MENÚ LATERAL IZQUIERDO */
 .sidebar {
-    width: 260px;
+    width: 280px;
     padding: 40px 0 40px 40px;
     position: fixed;
     height: 100vh;
@@ -30,7 +29,6 @@ body {
     z-index: 100;
 }
 
-/* NOMBRE PRINCIPAL */
 .brand {
     cursor: pointer;
     margin-bottom: 35px;
@@ -40,11 +38,9 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
-    color: #000000;
     letter-spacing: -0.2px;
 }
 
-/* GRUPOS DE MENÚ (Igual a la imagen) */
 .menu-group {
     display: flex;
     flex-direction: column;
@@ -53,8 +49,13 @@ body {
 
 .menu-title {
     font-size: 11px;
-    color: #666666;
+    color: #000000;
     margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.en-menu-title {
+    color: #999999;
     font-weight: 400;
 }
 
@@ -62,9 +63,14 @@ body {
     font-size: 11px;
     color: #000000;
     text-decoration: none;
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 500;
     width: max-content;
+}
+
+.en-menu {
+    color: #999999;
+    font-weight: 400;
 }
 
 .menu-group a:hover {
@@ -73,14 +79,14 @@ body {
 
 /* ÁREA DE CONTENIDO (DERECHA) */
 .content-area {
-    margin-left: 260px; /* Deja espacio para que no tape el menú */
+    margin-left: 280px;
     flex-grow: 1;
     padding: 40px 40px 40px 20px;
 }
 
-/* FILTROS COMERCIALES INTERNOS */
+/* FILTROS */
 #filtros-comerciales {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -91,7 +97,7 @@ body {
 }
 
 .filtro-label {
-    color: #666666;
+    font-weight: 600;
     margin-right: 10px;
 }
 
@@ -109,74 +115,146 @@ body {
     color: #666666;
 }
 
-.hidden {
-    display: none !important;
+/* BOTÓN VOLVER ATRÁS */
+#back-button-container {
+    margin-bottom: 30px;
 }
 
-/* GRILLA Y ELEMENTOS MULTIMEDIA */
-.proyecto-item {
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+.back-button {
+    background: none;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    color: #000000;
+    text-transform: lowercase;
 }
 
-.proyecto-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    color: #888888;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
+.back-button:hover {
+    color: #999999;
 }
 
-.proyecto-grid-media {
+/* NIVEL 1: GRILLA DE PROYECTOS (3 COLUMNAS EN WEB) */
+.grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 25px;
+}
+
+.proyecto-tarjeta {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-tarjeta-media {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background-color: #fafafa;
+    margin-bottom: 12px;
+}
+
+.proyecto-tarjeta h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.proyecto-tarjeta .ano {
+    font-size: 10px;
+    color: #999999;
+    margin-bottom: 6px;
+}
+
+.proyecto-tarjeta p {
+    font-size: 11px;
+    color: #666666;
+    line-height: 1.4;
+}
+
+.proyecto-tarjeta .mas-link {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* NIVEL 2: VISTA INTERNA DEL PROYECTO */
+.proyecto-interno {
+    max-width: 900px;
+}
+
+.proyecto-interno-header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 30px;
+}
+
+.proyecto-interno-header h1 {
+    font-size: 18px;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
-.proyecto-grid-media img, 
-.proyecto-grid-media iframe {
+.descripcion-es {
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 650px;
+}
+
+.descripcion-en {
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+/* ARCHIVOS ADJUNTOS DENTRO DEL PROYECTO */
+.proyecto-interno-media {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.archivo-container {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 40px;
+}
+
+.archivo-meta {
+    font-size: 10px;
+    color: #888888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.archivo-display img, 
+.archivo-display iframe {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.proyecto-descripcion h3 {
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-.proyecto-descripcion p {
-    font-size: 12px;
-    color: #444444;
-    max-width: 550px;
-    line-height: 1.5;
-}
-
 /* INFO / BIO TEXTO */
 .bio-content {
+    max-width: 550px;
+}
+.bio-content p {
     font-size: 13px;
     line-height: 1.6;
-    max-width: 500px;
-    color: #000000;
+    margin-bottom: 15px;
+}
+.bio-content .en-text {
+    color: #999999;
 }
 
-/* RESPONSIVE: CELULARES */
+.hidden { display: none !important; }
+
+/* RESPONSIVE: CELULARES (Grilla pasa a 1 columna) */
 @media (max-width: 768px) {
-    .interface-container {
-        flex-direction: column;
-    }
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 30px 20px;
-    }
-    .content-area {
-        margin-left: 0;
-        padding: 20px;
-    }
+    .interface-container { flex-direction: column; }
+    .sidebar { position: relative; width: 100%; height: auto; padding: 30px 20px; }
+    .content-area { margin-left: 0; padding: 20px; }
+    .grid-proyectos { grid-template-columns: 1fr; gap: 30px; }
 }
