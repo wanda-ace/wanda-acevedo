@@ -1,107 +1,164 @@
-// TU BASE DE DATOS DE ARCHIVOS COMPLETA
-const listaArchivos = [
+// NUEVA ESTRUCTURA: PROYECTOS QUE CONTIENEN ARCHIVOS ADJUNTOS
+const listaProyectos = [
   {
-    proyecto: "Postproducción de Sesiones en Vivo",
-    categoria: "comercial",
-    marca: "Flakkaboem",
-    tag: "Short Form",
-    año: "2024",
-    descripcion: "Edición de fragmentos y reels dinámicos optimizados para Instagram.",
-    mediaHTML: '<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=600" alt="Ejemplo de video">'
-  },
-  {
-    proyecto: "Estrategia Visual BRKV",
-    categoria: "comercial",
-    marca: "BRKV",
-    tag: "UX/UI",
-    año: "2025",
-    descripcion: "Prototipado de pantallas de la app en Figma bajo sus brand guidelines.",
-    mediaHTML: '<img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600" alt="UI en Figma">'
-  },
-  {
-    proyecto: "Bajo Sur",
+    id: "bajo-sur",
+    titulo: "Bajo Sur - Instalación Audiovisual",
     categoria: "instalacion",
     marca: "personal",
-    tag: "Instalación",
     año: "2025",
-    descripcion: "Obra multimedia exhibida en la Muestra MAGMA dentro del espacio CHEla.",
-    mediaHTML: '<img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800" alt="Instalación Bajo Sur">'
+    portadaImg: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600", // Foto miniatura en la grilla
+    resumenES: "Obra multimedia exhibida en la Muestra MAGMA dentro del espacio CHEla.",
+    resumenEN: "Multimedia work exhibited at the MAGMA Exhibition inside CHEla space.",
+    descripcionCompletaES: "Bajo Sur es una instalación audiovisual que explora las narrativas de la cultura digital y las tecnologías creativas emergentes en entornos urbanos periféricos.",
+    descripcionCompletaEN: "Bajo Sur is an audiovisual installation that explores the narratives of digital culture and emerging creative technologies in peripheral urban environments.",
+    // Aquí adentro listas todos los archivos de este proyecto específico:
+    archivos: [
+      {
+        tag: "Registro Fotográfico",
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=900" alt="Bajo Sur 1">'
+      },
+      {
+        tag: "Video de la Instalación",
+        mediaHTML: '<iframe height="500" src="https://www.youtube.com/embed/EJEMPLO_BAJO_SUR" frameborder="0" allowfullscreen></iframe>'
+      }
+    ]
+  },
+  {
+    id: "flakkaboem",
+    titulo: "Postproducción de Sesiones en Vivo",
+    categoria: "comercial",
+    marca: "Flakkaboem",
+    año: "2024",
+    portadaImg: "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=600",
+    resumenES: "Edición, corrección de color y sincronización multicámara de sesiones de música en vivo.",
+    resumenEN: "Editing, color correction, and multicam synchronization of live music sessions.",
+    descripcionCompletaES: "Trabajo continuo de postproducción audiovisual para las sesiones en vivo de artistas independientes, adaptando las piezas a múltiples plataformas.",
+    descripcionCompletaEN: "Ongoing audiovisual postproduction work for live sessions of independent artists, adapting pieces across multiple platforms.",
+    archivos: [
+      {
+        tag: "Short Form / Reel",
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=900" alt="Sesión">'
+      }
+    ]
   }
 ];
 
-// TEXTO PARA TU SECCIÓN "INFO / BIO"
+// TEXTO BIOGRAFÍA BILINGÜE
 const textoBio = `
     <div class="bio-content">
-        <p><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para marcas y proyectos culturales.</p>
-        <br>
-        <p>Egresada de la Universidad de Buenos Aires (UBA) y con estudios en Producción Musical en la Universidad Nacional de Quilmes (UNQ), su enfoque cruza la cultura digital con las tecnologías creativas emergentes.</p>
+        <p><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital.</p>
+        <p class="en-text"><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production.</p>
     </div>
 `;
 
-// AL ENTRAR POR PRIMERA VEZ (HOME), DEJA LA PANTALLA EN BLANCO
+let categoriaActual = 'todos';
+
+// AL INICIAR: PANTALLA EN BLANCO
 function irAHome() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = '';
 }
 
-// MUESTRA LA BIOGRAFÍA
 function mostrarInfo() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = textoBio;
 }
 
-// RENDERIZA LA LISTA DE ARCHIVOS EN LA COLUMNA DERECHA
-function renderizarArchivos(archivosFiltrados) {
+// NIVEL 1: RENDERIZAR LA GRILLA DE PROYECTOS (3 COLUMNAS)
+function renderizarGrillaProyectos(proyectosAVisualizar) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
-    
-    archivosFiltrados.forEach(itemArch => {
+
+    const divGrilla = document.createElement('div');
+    divGrilla.className = 'grid-proyectos';
+
+    proyectosAVisualizar.forEach(proy => {
         const tarjeta = document.createElement('div');
-        tarjeta.className = 'proyecto-item';
+        tarjeta.className = 'proyecto-tarjeta';
+        tarjeta.setAttribute('onclick', `verProyectoInmersion('${proy.id}')`);
 
         tarjeta.innerHTML = `
-            <div class="proyecto-meta">
-                <span>${itemArch.marca !== 'personal' ? itemArch.marca + ' // ' : ''} ${itemArch.tag || ''}</span>
-                <span>${itemArch.año}</span>
-            </div>
-            <div class="proyecto-grid-media">
-                ${itemArch.mediaHTML}
-            </div>
-            <div class="proyecto-descripcion">
-                <h3>${itemArch.proyecto}</h3>
-                <p>${itemArch.descripcion}</p>
+            <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${proy.titulo}">
+            <h3>${proy.titulo}</h3>
+            <div class="ano">${proy.año}</div>
+            <p>${proy.resumenES} <span class="mas-link">[+]</span></p>
+        `;
+        divGrilla.appendChild(tarjeta);
+    });
+
+    contenedor.appendChild(divGrilla);
+}
+
+// NIVEL 2: VER UN PROYECTO AL DETALLE CON SUS PUBLICACIONES INTERNAS
+function verProyectoInmersion(idProyecto) {
+    const proy = listaProyectos.find(p => p.id === idProyecto);
+    if (!proy) return;
+
+    // Ocultar filtros si se entra al detalle, mostrar botón atrás
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.remove('hidden');
+
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    let archivosHTML = '';
+    proy.archivos.forEach(arch => {
+        archivosHTML += `
+            <div class="archivo-container">
+                <div class="archivo-meta">${arch.tag}</div>
+                <div class="archivo-display">${arch.mediaHTML}</div>
             </div>
         `;
-        contenedor.appendChild(tarjeta);
     });
+
+    contenedor.innerHTML = `
+        <div class="proyecto-interno">
+            <div class="proyecto-interno-header">
+                <h1>${proy.titulo} (${proy.año})</h1>
+                <p class="descripcion-es">${proy.descripcionCompletaES}</p>
+                <p class="descripcion-en">${proy.descripcionCompletaEN}</p>
+            </div>
+            <div class="proyecto-interno-media">
+                ${archivosHTML}
+            </div>
+        </div>
+    `;
+    window.scrollTo(0,0);
 }
 
-// FILTRADO POR MENÚ PRINCIPAL
+function volverALaGrilla() {
+    document.getElementById('back-button-container').classList.add('hidden');
+    filtrarCategoria(categoriaActual);
+}
+
 function filtrarCategoria(cat) {
-    const menuFiltros = document.getElementById('filtros-comerciales');
+    categoriaActual = cat;
+    document.getElementById('back-button-container').classList.add('hidden');
     
     if (cat === 'comercial') {
-        menuFiltros.classList.remove('hidden');
+        document.getElementById('filtros-comerciales').classList.remove('hidden');
     } else {
-        menuFiltros.classList.add('hidden');
+        document.getElementById('filtros-comerciales').classList.add('hidden');
     }
 
-    const filtrados = listaArchivos.filter(a => a.categoria === cat);
-    renderizarArchivos(filtrados);
+    const filtrados = listaProyectos.filter(p => p.categoria === cat);
+    renderizarGrillaProyectos(filtrados);
 }
 
-// FILTRADO POR METADATOS INTERNOS (SOLO COMERCIAL)
 function filtrarPorMetadato(tipo, valor) {
-    let filtrados = listaArchivos.filter(a => a.categoria === 'comercial');
+    let filtrados = listaProyectos.filter(p => p.categoria === 'comercial');
     
     if (tipo === 'marca' && valor !== 'todas') {
-        filtrados = filtrados.filter(a => a.marca === valor);
+        filtrados = filtrados.filter(p => p.marca === valor);
     } else if (tipo === 'tag' && valor !== 'todos') {
-        filtrados = filtrados.filter(a => a.tag === valor);
+        // Filtra si al menos uno de sus archivos internos coincide con el tag buscado
+        filtrados = filtrados.filter(p => p.archivos.some(a => a.tag.includes(valor)));
     }
     
-    renderizarArchivos(filtrados);
+    renderizarGrillaProyectos(filtrados);
 }
 
-// INICIALIZACIÓN: ARRANCAR EN BLANCO (HOME)
+// Arrancar en Home vacío
 irAHome();
