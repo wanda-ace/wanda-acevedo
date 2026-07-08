@@ -66,7 +66,6 @@ const listaProyectos = [
       }
     ]
   },
-
   // ----------------------------------------------------
   // FREELANCE
   // ----------------------------------------------------
@@ -89,7 +88,6 @@ const listaProyectos = [
   { id: "free-2", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500", publicaciones: [{ idPub: "fr2-p1", año: "2024", titulo: "Indie Clip: Solitary Boy", tags: ["Short Form", "Color Grading", "Directing"], descripcionES: "Registro audiovisual de campo y montaje rítmico final para el lanzamiento del videoclip oficial de la banda.", descripcionEN: "Audiovisual field recording and final rhythmic editing for the band's official music video launch.", mediaHTML: "" }] },
   { id: "free-3", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "fr3-p1", año: "2023", titulo: "Concierto Niceto Club", tags: ["Fotografía", "Concert Music", "Documentary"], descripcionES: "Cobertura fotográfica documental en condiciones de iluminación complejas dentro del marco del festival de música emergente.", descripcionEN: "Documentary photographic coverage in complex lighting conditions within the framework of the emerging music festival.", mediaHTML: "" }] },
   { id: "free-4", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?w=500", publicaciones: [{ idPub: "fr4-p1", año: "2024", titulo: "Identidad Visual: AlmaSense", tags: ["UX/UI", "AI Tools", "Branding"], descripcionES: "Optimización técnica de bibliotecas digitales y catalogación integral de assets automatizados asistidos por modelos de IA.", descripcionEN: "Technical optimization of digital libraries and comprehensive cataloging of automated assets assisted by AI models.", mediaHTML: "" }] },
-
   // ----------------------------------------------------
   // AUDIOVISUAL
   // ----------------------------------------------------
@@ -105,4 +103,245 @@ const listaProyectos = [
         tags: ["Documental", "Audiovisual", "Sound Design"],
         descripcionES: "Exploración exhaustiva de paisajes sonoros analógicos y microrrelatos urbanos locales bajo una impronta cinematográfica experimental de autor.",
         descripcionEN: "Comprehensive exploration of analog soundscapes and local urban micro-narratives under an experimental authorial cinematic stamp.",
-        mediaHTML: '<img src="
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800">'
+      }
+    ]
+  },
+  { id: "aud-2", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500", publicaciones: [{ idPub: "aud2-p1", año: "2024", titulo: "FADU / IDIS Investigación", tags: ["Audiovisual", "Research", "Archiving"], descripcionES: "Pasantía académica orientada al diseño de imagen y sonido experimental, focalizando en el rescate de archivos multimediales.", descripcionEN: "Academic internship oriented towards experimental image and sound design, focusing on the rescue of multimedia archives.", mediaHTML: "" }] },
+  { id: "aud-3", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=500", publicaciones: [{ idPub: "aud3-p1", año: "2025", titulo: "Sinfonía Urbana", tags: ["Motion Graphics", "Urban Architecture", "Editing"], descripcionES: "Pieza rítmica de montaje continuo basada en el pulso visual frenético de las grandes metrópolis contemporáneas.", descripcionEN: "Rhythmic piece of continuous editing based on the frenetic visual pulse of major contemporary metropolises.", mediaHTML: "" }] },
+  { id: "aud-4", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=500", publicaciones: [{ idPub: "aud4-p1", año: "2025", titulo: "Ensayo Sonoro UNQ", tags: ["Audiovisual", "Synthesis", "Real Time"], descripcionES: "Composición electroacústica avanzada manipulada con tecnologías digitales y síntesis interactiva en tiempo real.", descripcionEN: "Advanced electroacoustic composition manipulated with digital technologies and interactive real-time synthesis.", mediaHTML: "" }] },
+  // ----------------------------------------------------
+  // INSTALACIONES
+  // ----------------------------------------------------
+  {
+    id: "inst-bajo-sur",
+    categoria: "instalaciones",
+    portadaImg: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500",
+    publicaciones: [
+      {
+        idPub: "inst1-p1",
+        año: "2025",
+        titulo: "Bajo Sur - Instalación",
+        tags: ["Instalación", "Nuevas Tecnologías", "Fine Arts"],
+        descripcionES: "Montaje espacial multimedia inmersivo que investiga de forma crítica las tensiones directas entre la contaminación acústica y las luces artificiales fijas.",
+        descripcionEN: "Immersive multimedia spatial staging that critically investigates the direct tensions between acoustic pollution and fixed artificial lights.",
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800">'
+      }
+    ]
+  },
+  { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.", descripcionEN: "Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.", mediaHTML: "" }] },
+  { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.", descripcionEN: "Interactive spatial performance using granular synthesis manipulated through body motion sensors.", mediaHTML: "" }] },
+  { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.", descripcionEN: "Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.", mediaHTML: "" }] },
+  // ----------------------------------------------------
+  // DISEÑO GRÁFICO
+  // ----------------------------------------------------
+  { id: "dis-1", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=500", publicaciones: [{ idPub: "dis1-p1", año: "2025", titulo: "Branding Residencial", tags: ["Branding", "Typography", "Editorial Layout"], descripcionES: "Desarrollo de identidad de marca premium y sistemas tipográficos limpios orientados al sector de desarrollos inmobiliarios de lujo.", descripcionEN: "Premium brand identity development and clean typographic systems tailored for the luxury real estate development sector.", mediaHTML: "" }] },
+  { id: "dis-2", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis2-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.", descripcionEN: "High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.", mediaHTML: "" }] },
+  { id: "dis-3", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis3-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.", descripcionEN: "Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.", mediaHTML: "" }] },
+  { id: "dis-4", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis4-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva de alta gama.", descripcionEN: "Structural sustainable packaging design using minimal die-cuts and a restrictive high-end typographic palette.", mediaHTML: "" }] },
+  // ----------------------------------------------------
+  // FOTOGRAFÍA
+  // ----------------------------------------------------
+  { id: "foto-1", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500", publicaciones: [{ idPub: "fot1-p1", año: "2024", titulo: "Conciertos Under 2024", tags: ["Fotografía", "Analog Film", "High Contrast"], descripcionES: "Registro fotográfico en blanco y negro de alto contraste capturado íntegramente con película analógica de alta sensibilidad forzada.", descripcionEN: "High-contrast black and white photographic registry entirely captured with pushed analog high-sensitivity film.", mediaHTML: "" }] },
+  { id: "foto-2", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500", publicaciones: [{ idPub: "fot2-p1", año: "2025", titulo: "Arquitectura Simétrica", tags: ["Fotografía", "Geometry", "Urban Architecture"], descripcionES: "Ensayo visual enfocado en la ortogonalidad y la rigidez estructural de las fachadas brutalistas sobrevivientes en centros urbanos.", descripcionEN: "Visual essay focused on the orthogonality and structural rigidity of surviving brutalist facades in urban centers.", mediaHTML: "" }] },
+  { id: "foto-3", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500", publicaciones: [{ idPub: "fot3-p1", año: "2024", titulo: "Retratos de Artistas", tags: ["Fotografía", "Lighting", "Portraits"], descripcionES: "Sesiones de estudio personalizadas para músicos utilizando iluminación puntual indirecta para acentuar el carácter dramático de la pieza.", descripcionEN: "Custom studio sessions for musicians utilizing precise indirect lighting to enhance the dramatic character of the piece.", mediaHTML: "" }] },
+  { id: "foto-4", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500", publicaciones: [{ idPub: "fot4-p1", año: "2026", titulo: "Espacios Vacíos", tags: ["Fotografía", "Industrial Decay", "Fine Arts"], descripcionES: "Exploración estética sobre el deterioro institucional a través del registro analógico detallado de locaciones industriales en desuso.", descripcionEN: "Aesthetic exploration regarding institutional decay through detailed analog registry of defunct industrial locations.", mediaHTML: "" }] }
+];
+
+const textoBio = `
+    <div class="bio-content-view">
+        <div class="bio-es">
+            <p><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
+            <p>Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
+        </div>
+        <div class="bio-en">
+            <p><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
+            <p>Formed at the University of Buenos Aires (UBA) and with a strong technical focus, she researches contemporary narratives and emerging creative technologies.</p>
+        </div>
+    </div>
+`;
+
+let categoriaActual = 'todos';
+
+function irAHome() {
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
+    // Al ir al Home, renderizamos todos los proyectos de la lista en lugar de dejarlo en blanco
+    renderizarGrillaProyectos(listaProyectos);
+}
+
+function mostrarInfo() {
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
+    document.getElementById('dynamic-content').innerHTML = textoBio;
+}
+
+// NIVEL 1: RENDER DE PROYECTOS INTEGRALES EN LA GRILLA DE CATEGORÍA
+function renderizarGrillaProyectos(proyectosAVisualizar) {
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divGrilla = document.createElement('div');
+    divGrilla.className = 'grid-proyectos';
+
+    proyectosAVisualizar.forEach(proy => {
+        const primeraPub = proy.publicaciones[0];
+        if (!primeraPub) return;
+
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'proyecto-tarjeta';
+        tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
+
+        tarjeta.innerHTML = `
+            <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}">
+            <div class="pub-ano">${primeraPub.año}</div>
+            <h3>${primeraPub.titulo}</h3>
+            <div class="pub-tags">${primeraPub.tags.join(' - ')}</div>
+            <div class="line-clamp-preview">
+                ${primeraPub.descripcionES} <span class="mas-link">[+]</span>
+            </div>
+        `;
+        divGrilla.appendChild(tarjeta);
+    });
+
+    contenedor.appendChild(divGrilla);
+}
+
+// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO
+function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divGrilla = document.createElement('div');
+    divGrilla.className = 'grid-proyectos';
+
+    publicacionesFiltradas.forEach(item => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'proyecto-tarjeta';
+        tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
+
+        tarjeta.innerHTML = `
+            <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}">
+            <div class="pub-ano">${item.pub.año}</div>
+            <h3>${item.pub.titulo}</h3>
+            <div class="pub-tags">${item.pub.tags.join(' - ')}</div>
+            <div class="line-clamp-preview">
+                ${item.pub.descripcionES} <span class="mas-link">[+]</span>
+            </div>
+        `;
+        divGrilla.appendChild(tarjeta);
+    });
+
+    contenedor.appendChild(divGrilla);
+}
+
+// NIVEL 2: VISTA INTERNA DEL PROYECTO
+function verProyecto(idProyecto) {
+    const proy = listaProyectos.find(p => p.id === idProyecto);
+    if (!proy) return;
+
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.remove('hidden');
+
+    const contenedor = document.getElementById('dynamic-content');
+    contenedor.innerHTML = '';
+
+    const divProyecto = document.createElement('div');
+    divProyecto.className = 'proyecto-interno';
+    
+    let contenidoHTML = '';
+
+    proy.publicaciones.forEach(pub => {
+        let mediaRenderizado = pub.mediaHTML;
+        if (mediaRenderizado && mediaRenderizado.includes('<img')) {
+            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true"');
+        }
+
+        contenidoHTML += `
+            <div class="publicacion-item">
+                <div class="pub-ano">${pub.año}</div>
+                <div class="pub-titulo-interno">${pub.titulo}</div>
+                <div class="pub-tags">${pub.tags.join(' - ')}</div>
+                
+                <div class="descripcion-bloque-es">${pub.descripcionES}</div>
+                <div class="descripcion-bloque-en">${pub.descripcionEN}</div>
+                
+                <div class="pub-media-container">
+                    ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
+                </div>
+            </div>
+        `;
+    });
+
+    divProyecto.innerHTML = contenidoHTML;
+    contenedor.appendChild(divProyecto);
+    window.scrollTo(0,0);
+}
+
+function volverALaGrilla() {
+    document.getElementById('back-button-container').classList.add('hidden');
+    filtrarCategoria(categoriaActual);
+}
+
+function filtrarCategoria(cat) {
+    categoriaActual = cat;
+    document.getElementById('back-button-container').classList.add('hidden');
+    
+    if (cat === 'comercial') {
+        document.getElementById('filtros-comerciales').classList.remove('hidden');
+    } else {
+        document.getElementById('filtros-comerciales').classList.add('hidden');
+    }
+
+    if (cat === 'todos') {
+        renderizarGrillaProyectos(listaProyectos);
+    } else {
+        const filtrados = listaProyectos.filter(p => p.categoria === cat);
+        renderizarGrillaProyectos(filtrados);
+    }
+}
+
+function filtrarPorMetadato(tagBuscado) {
+    document.getElementById('back-button-container').classList.add('hidden');
+    let publicacionesCoincidentes = [];
+
+    listaProyectos.forEach(proy => {
+        if (proy.categoria === 'comercial') {
+            proy.publicaciones.forEach(pub => {
+                if (pub.tags.includes(tagBuscado)) {
+                    publicacionesCoincidentes.push({
+                        padreId: proy.id,
+                        padreImg: proy.portadaImg,
+                        pub: pub
+                    });
+                }
+            });
+        }
+    });
+    
+    renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
+}
+
+// CONTROLADOR DEL LIGHTBOX GLOBAL
+document.addEventListener('click', function(event) {
+    if (event.target.hasAttribute('data-lightbox')) {
+        const urlImagen = event.target.getAttribute('src');
+        const modal = document.getElementById('lightbox-modal');
+        const imagenModal = document.getElementById('lightbox-img');
+        
+        if (modal && imagenModal) {
+            imagenModal.src = urlImagen;
+            modal.className = 'lightbox-visible';
+        }
+    }
+});
+
+function cerrarImagen() {
+    const modal = document.getElementById('lightbox-modal');
+    if (modal) {
+        modal.className = 'lightbox-hidden';
+    }
+}
+
+// Al iniciar el archivo, cargamos directamente la vista Home con todos los proyectos visibles
+irAHome();
