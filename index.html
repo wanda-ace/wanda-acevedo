@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanda Acevedo</title>
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 <body>
 
     <div class="interface-container">
         
-        <!-- COLUMNA IZQUIERDA: MENÚ FIJO -->
+        <!-- COLUMNA IZQUIERDA: MENÚ FIJO ESTILO ÁRBOL -->
         <aside class="sidebar">
             <div class="brand" onclick="irAHome()">
-                <h2>Wanda<br>Acevedo</h2>
+                <h2>Wanda Acevedo</h2>
             </div>
             
             <nav class="menu-group">
-                <a href="#" onclick="mostrarInfo()">Info / Bio <span class="en-menu">/ About</span></a>
+                <a href="#" onclick="mostrarInfo()" class="menu-root main-link">Info / Bio</a>
             </nav>
 
             <nav class="menu-group">
-                <span class="menu-title">Categorías / <span class="en-menu-title">Categories</span>:</span>
-                <a href="#" onclick="filtrarCategoria('comercial')">Comercial <span class="en-menu">/ Commercial</span></a>
-                <a href="#" onclick="filtrarCategoria('instalacion')">Instalación <span class="en-menu">/ Installation</span></a>
-                <a href="#" onclick="filtrarCategoria('audiovisual')">Audiovisual <span class="en-menu">/ Audiovisual</span></a>
-                <a href="#" onclick="filtrarCategoria('fotografia')">Fotografía <span class="en-menu">/ Photography</span></a>
-                <a href="#" onclick="filtrarCategoria('animacion')">Animación <span class="en-menu">/ Animation</span></a>
-                <a href="#" onclick="filtrarCategoria('diseno')">Diseño gráfico <span class="en-menu">/ Graphic Design</span></a>
+                <span class="menu-root">Trabajo <span class="en-menu">| Work</span></span>
+                <div class="tree-branch">
+                    <a href="#" onclick="filtrarCategoria('comercial')">├── Comercial / Marcas <span class="en-menu">| Comercial / Brands</span></a>
+                    <a href="#" onclick="filtrarCategoria('freelance')">└── Freelance <span class="en-menu">| Freelance</span></a>
+                </div>
             </nav>
 
-            <div class="menu-group">
-                <span class="menu-title">Contacto / <span class="en-menu-title">Contact</span>:</span>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="mailto:wanda01acevedo@gmail.com">Email</a>
-            </div>
+            <nav class="menu-group">
+                <span class="menu-root">Proyectos <span class="en-menu">| Proyectos</span></span>
+                <div class="tree-branch">
+                    <a href="#" onclick="filtrarCategoria('audiovisual')">├── Audiovisual <span class="en-menu">| Audiovisual</span></a>
+                    <a href="#" onclick="filtrarCategoria('instalaciones')">├── Instalaciones <span class="en-menu">| Art Installations</span></a>
+                    <a href="#" onclick="filtrarCategoria('diseno')">├── Diseño Gráfico <span class="en-menu">| Graphic Design</span></a>
+                    <a href="#" onclick="filtrarCategoria('fotografia')">└── Fotografía <span class="en-menu">| Photography</span></a>
+                </div>
+            </nav>
         </aside>
 
         <!-- COLUMNA DERECHA: CONTENIDO DINÁMICO -->
@@ -44,23 +45,16 @@
             <!-- FILTROS EXCLUSIVOS PARA TRABAJOS COMERCIALES -->
             <section id="filtros-comerciales" class="hidden">
                 <div class="grupo-filtro">
-                    <span class="filtro-label">Marcas / Brands:</span>
-                    <button onclick="filtrarPorMetadato('marca', 'todas')">Todas / All</button>
-                    <button onclick="filtrarPorMetadato('marca', 'BRKV')">BRKV International</button>
-                    <button onclick="filtrarPorMetadato('marca', 'TechRound')">TechRound UK</button>
-                    <button onclick="filtrarPorMetadato('marca', 'La Cosecha')">La Cosecha</button>
-                    <button onclick="filtrarPorMetadato('marca', 'Flakkaboem')">Flakkaboem Sessions</button>
-                </div>
-                <div class="grupo-filtro">
-                    <span class="filtro-label">Formatos / Tags:</span>
+                    <span class="filtro-label">Filtros / Filters:</span>
                     <button onclick="filtrarPorMetadato('tag', 'todos')">Todos / All</button>
                     <button onclick="filtrarPorMetadato('tag', 'Short Form')">Short Form</button>
                     <button onclick="filtrarPorMetadato('tag', 'Motion Graphics')">Motion Graphics</button>
                     <button onclick="filtrarPorMetadato('tag', 'UX/UI')">UX/UI</button>
+                    <button onclick="filtrarPorMetadato('tag', 'Branding')">Branding</button>
                 </div>
             </section>
 
-            <!-- BOTÓN VOLVER ATRÁS (Se muestra solo dentro de un proyecto) -->
+            <!-- BOTÓN VOLVER ATRÁS -->
             <div id="back-button-container" class="hidden">
                 <button class="back-button" onclick="volverALaGrilla()">← volver / back</button>
             </div>
