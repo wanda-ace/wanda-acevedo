@@ -1,0 +1,143 @@
+/* RESET DE ESTILOS BASES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* CABECERA Y NAVEGACIÓN */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN DE FILTROS */
+#filtros-comerciales {
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.grupo-filtro {
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+}
+
+.grupo-filtro span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.grupo-filtro button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.grupo-filtro button:hover {
+    color: #666666;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* GRILLA DE PROYECTOS Y LÍNEAS DIVISORIAS */
+.proyecto-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.proyecto-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.proyecto-grid-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.proyecto-grid-media img, 
+.proyecto-grid-media iframe {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    background-color: #fafafa;
+}
+
+.proyecto-descripcion h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.proyecto-descripcion p {
+    font-size: 0.95rem;
+    color: #333333;
+    max-width: 600px;
+}
+
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        margin-left: 0;
+    }
+    body {
+        padding: 20px;
+    }
+}
