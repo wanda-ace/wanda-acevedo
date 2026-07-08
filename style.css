@@ -19,8 +19,8 @@ body {
 
 /* MENÚ LATERAL IZQUIERDO */
 .sidebar {
-    width: 280px;
-    padding: 40px 0 40px 40px;
+    width: 320px;
+    padding: 50px 0 40px 40px;
     position: fixed;
     height: 100vh;
     display: flex;
@@ -31,57 +31,62 @@ body {
 
 .brand {
     cursor: pointer;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .brand h2 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.3px;
 }
 
 .menu-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.menu-title {
-    font-size: 11px;
+.menu-root {
+    font-size: 13px;
     color: #000000;
-    margin-bottom: 4px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.en-menu-title {
-    color: #999999;
-    font-weight: 400;
-}
-
-.menu-group a {
-    font-size: 11px;
-    color: #000000;
+.main-link {
     text-decoration: none;
-    line-height: 1.5;
-    font-weight: 500;
     width: max-content;
 }
 
+.tree-branch {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+
+.tree-branch a {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 .en-menu {
-    color: #999999;
+    color: #a3a3a3;
     font-weight: 400;
 }
 
-.menu-group a:hover {
+.tree-branch a:hover, .main-link:hover {
     color: #666666;
 }
 
 /* ÁREA DE CONTENIDO (DERECHA) */
 .content-area {
-    margin-left: 280px;
+    margin-left: 320px;
     flex-grow: 1;
-    padding: 40px 40px 40px 20px;
+    padding: 50px 50px 50px 20px;
 }
 
 /* FILTROS */
@@ -92,8 +97,7 @@ body {
 }
 
 .grupo-filtro {
-    margin-bottom: 8px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .filtro-label {
@@ -106,7 +110,7 @@ body {
     border: none;
     cursor: pointer;
     margin-right: 12px;
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: underline;
     color: #000000;
 }
@@ -123,17 +127,12 @@ body {
 .back-button {
     background: none;
     border: none;
-    font-size: 11px;
+    font-size: 12px;
     cursor: pointer;
     color: #000000;
-    text-transform: lowercase;
 }
 
-.back-button:hover {
-    color: #999999;
-}
-
-/* NIVEL 1: GRILLA DE PROYECTOS (3 COLUMNAS EN WEB) */
+/* NIVEL 1: GRILLA DE PROYECTOS (3 COLUMNAS) */
 .grid-proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,17 +157,16 @@ body {
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 4px;
-    line-height: 1.2;
 }
 
 .proyecto-tarjeta .ano {
-    font-size: 10px;
+    font-size: 11px;
     color: #999999;
     margin-bottom: 6px;
 }
 
 .proyecto-tarjeta p {
-    font-size: 11px;
+    font-size: 12px;
     color: #666666;
     line-height: 1.4;
 }
@@ -179,58 +177,74 @@ body {
 }
 
 /* NIVEL 2: VISTA INTERNA DEL PROYECTO */
-.proyecto-interno {
-    max-width: 900px;
-}
-
-.proyecto-interno-header {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 30px;
-}
-
-.proyecto-interno-header h1 {
-    font-size: 18px;
+.proyecto-interno h1 {
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-.descripcion-es {
-    font-size: 13px;
-    color: #000000;
-    line-height: 1.6;
-    margin-bottom: 12px;
-    max-width: 650px;
+/* PUBLICACIONES INDIVIDUALES DENTRO DEL PROYECTO */
+.publicacion-item {
+    margin-bottom: 60px;
 }
 
-.descripcion-en {
-    font-size: 13px;
+.pub-ano {
+    font-size: 11px;
     color: #999999;
-    line-height: 1.6;
-    max-width: 650px;
-}
-
-/* ARCHIVOS ADJUNTOS DENTRO DEL PROYECTO */
-.proyecto-interno-media {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.archivo-container {
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 40px;
-}
-
-.archivo-meta {
-    font-size: 10px;
-    color: #888888;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     text-transform: uppercase;
 }
 
-.archivo-display img, 
-.archivo-display iframe {
+.pub-titulo {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.pub-tags {
+    font-size: 12px;
+    color: #AB7B9F; /* Tu color rosa HEX */
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* DOS COLUMNAS DE TEXTO EN PARALELO */
+.pub-textos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.col-es {
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.col-en {
+    font-size: 13px;
+    color: #999999; /* Inglés en gris */
+    line-height: 1.6;
+}
+
+/* LÍNEA DIVISORIA FINITA PUNTEADA HORIZONTAL */
+.linea-punteada {
+    border: none;
+    border-top: 1px dotted #cccccc;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/* CONTENIDO MULTIMEDIA DEBAJO */
+.pub-media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.pub-media-container img, 
+.pub-media-container iframe {
     width: 100%;
     height: auto;
     display: block;
@@ -238,23 +252,18 @@ body {
 
 /* INFO / BIO TEXTO */
 .bio-content {
-    max-width: 550px;
-}
-.bio-content p {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-.bio-content .en-text {
-    color: #999999;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
 }
 
 .hidden { display: none !important; }
 
-/* RESPONSIVE: CELULARES (Grilla pasa a 1 columna) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .interface-container { flex-direction: column; }
     .sidebar { position: relative; width: 100%; height: auto; padding: 30px 20px; }
     .content-area { margin-left: 0; padding: 20px; }
-    .grid-proyectos { grid-template-columns: 1fr; gap: 30px; }
+    .grid-proyectos { grid-template-columns: 1fr; }
+    .pub-textos-columnas, .bio-content { grid-template-columns: 1fr; gap: 15px; }
 }
