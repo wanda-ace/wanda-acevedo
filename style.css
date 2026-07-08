@@ -1,241 +1,254 @@
-/* ==========================================================================
-   1. ESTILOS GENERALES Y MAQUETACIÓN
-   ========================================================================== */
+/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    line-height: 1.5;
-    padding: 40px;
 }
 
-/* Contenedor principal de la aplicación */
-#dynamic-content {
-    margin-top: 40px;
-    width: 100%;
+.interface-container {
+    display: flex;
+    min-height: 100vh;
 }
 
-/* ==========================================================================
-   2. GRILLA PRINCIPAL DE PROYECTOS (NIVEL 1)
-   ========================================================================== */
+/* MENÚ LATERAL IZQUIERDO */
+.sidebar {
+    width: 320px;
+    padding: 50px 0 40px 40px;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.brand {
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.brand h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.menu-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.menu-root-box {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.tree-branch-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    gap: 4px;
+}
+
+.tree-branch-box a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.en-menu {
+    color: #a3a3a3;
+    font-weight: 400;
+}
+
+.tree-branch-box a:hover, .menu-root-box:hover {
+    color: #666666;
+}
+
+/* ÁREA DE CONTENIDO (DERECHA) */
+.content-area {
+    margin-left: 320px;
+    flex-grow: 1;
+    padding: 50px 50px 50px 20px;
+}
+
+/* FILTROS */
+#filtros-comerciales {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.grupo-filtro {
+    font-size: 12px;
+}
+
+.filtro-label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.grupo-filtro button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.grupo-filtro button:hover {
+    color: #666666;
+}
+
+/* BOTÓN VOLVER ATRÁS */
+#back-button-container {
+    margin-bottom: 30px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* NIVEL 1: GRILLA (3 COLUMNAS) */
 .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas rígidas por defecto */
-    gap: 30px;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 25px;
 }
 
 .proyecto-tarjeta {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px;
 }
 
-/* Imagen de Portada (Grilla) - Actúa como botón para entrar */
 .proyecto-tarjeta-media {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
+    background-color: #fafafa;
     margin-bottom: 12px;
-    cursor: pointer; /* Cursor de mano indicando que es clickeable para entrar */
-    transition: filter 0.2s ease;
-}
-
-.proyecto-tarjeta-media:hover {
-    filter: brightness(0.9);
-}
-
-/* Datos de la tarjeta */
-.pub-ano {
-    font-size: 12px;
-    color: #666666;
-    margin-bottom: 4px;
-    text-transform: uppercase;
 }
 
 .proyecto-tarjeta h3 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+}
+
+.pub-ano {
+    font-size: 11px;
+    color: #999999;
+    margin-bottom: 2px;
+    text-transform: uppercase;
 }
 
 .pub-tags {
     font-size: 12px;
-    color: #888888;
+    color: #AB7B9F; /* Rosa predeterminado */
+    font-weight: 500;
     margin-bottom: 8px;
-    font-weight: normal; /* Modificado: Sin negritas */
 }
 
-/* Vista previa de la descripción corta */
+/* LIMITAR LA PREVIEW EN LA GRILLA A DOS LÍNEAS MÁXIMO */
 .line-clamp-preview {
-    font-size: 13px;
-    color: #333333;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;  
     overflow: hidden;
-    cursor: pointer;
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.4;
 }
 
 .mas-link {
     color: #000000;
     font-weight: bold;
-    margin-left: 4px;
 }
 
-/* ==========================================================================
-   3. VISTA INTERNA DEL PROYECTO (NIVEL 2)
-   ========================================================================== */
+/* NIVEL 2: VISTA INTERNA DEL PROYECTO */
 .proyecto-interno {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 60px;
+    max-width: 800px;
 }
 
 .publicacion-item {
-    margin-bottom: 60px;
-    width: 100%;
+    margin-bottom: 50px;
 }
 
 .pub-titulo-interno {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
-.descripcion-bloque-es,
+.descripcion-bloque-es {
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
 .descripcion-bloque-en {
-    font-size: 14px;
-    max-width: 700px;
-    margin-top: 14px;
-    color: #222222;
+    font-size: 13px;
+    color: #999999; /* Inglés en gris */
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
-.descripcion-bloque-en {
-    color: #666666;
-    font-style: italic;
-    margin-top: 8px;
-}
-
-/* Contenedor de imágenes de soporte internas */
+/* CONTENIDO MULTIMEDIA CONTINUO */
 .pub-media-container {
-    width: 100%;
-    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* Imágenes internas del proyecto: Sí habilitan la lupa de zoom */
-.pub-media-container img {
-    max-width: 100%;
+.pub-media-container img, 
+.pub-media-container iframe {
+    width: 100%;
     height: auto;
     display: block;
-    cursor: zoom-in; /* Cursor de lupa indicando que se expande */
-    transition: transform 0.2s ease;
 }
 
-.pub-media-container img:hover {
-    transform: scale(1.005);
+/* BIOGRAFÍA CONTINUA */
+.bio-content-view {
+    max-width: 650px;
+}
+.bio-content-view .bio-es {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.bio-content-view .bio-en {
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.6;
 }
 
-/* Elemento multimedia vacío */
-.pub-media-container div {
-    border: 1px dashed #cccccc;
-    padding: 30px;
-    text-align: center;
-    background-color: #fafafa;
-}
+.hidden { display: none !important; }
 
-/* ==========================================================================
-   4. PANTALLA COMPLETA INTEGRAL (LIGHTBOX MODAL)
-   ========================================================================== */
-#lightbox-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.95); /* Fondo negro de alta opacidad */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999; /* Por encima de cualquier menú o filtro */
-    cursor: zoom-out; /* Clickear en cualquier lado oscuro cierra el zoom */
-    transition: opacity 0.25s ease;
-}
-
-/* Clases dinámicas controladas por JS */
-.lightbox-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.lightbox-visible {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* La imagen expandida */
-#lightbox-img {
-    max-width: 92%;
-    max-height: 92%;
-    object-fit: contain;
-    border-radius: 2px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-    user-select: none;
-}
-
-/* Botón flotante 'X' para cerrar */
-.lightbox-cerrar {
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    color: #ffffff;
-    font-size: 38px;
-    font-weight: 300;
-    cursor: pointer;
-    line-height: 1;
-    transition: color 0.2s ease;
-}
-
-.lightbox-cerrar:hover {
-    color: #bbbbbb;
-}
-
-/* ==========================================================================
-   5. COMPORTAMIENTO RESPONSIVE (MÓVILES Y TABLETS)
-   ========================================================================== */
-@media (max-width: 1024px) {
-    .grid-proyectos {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-
-    .grid-proyectos {
-        grid-template-columns: 1fr; /* 1 columna fluida en celulares */
-        gap: 24px;
-    }
-    
-    #lightbox-img {
-        max-width: 96%;
-        max-height: 85%; /* Deja espacio para no chocar con bordes del teléfono */
-    }
-
-    .lightbox-cerrar {
-        top: 16px;
-        right: 20px;
-        font-size: 44px; /* Un poco más grande para facilitar el toque táctil */
-    }
+@media (max-width: 900px) {
+    .interface-container { flex-direction: column; }
+    .sidebar { position: relative; width: 100%; height: auto; padding: 30px 20px; }
+    .content-area { margin-left: 0; padding: 20px; }
+    .grid-proyectos { grid-template-columns: 1fr; }
 }
