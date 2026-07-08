@@ -94,16 +94,24 @@ const listaProyectos = [
   {
     id: "aud-albores",
     categoria: "audiovisual",
-    portadaImg: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500",
+    portadaImg: "img/portadas/portada-albores.png",
     publicaciones: [
       {
         idPub: "aud1-p1",
         año: "2023",
-        titulo: "Corto Documental: Albores",
-        tags: ["Documental", "Audiovisual", "Sound Design"],
-        descripcionES: "Exploración exhaustiva de paisajes sonoros analógicos y microrrelatos urbanos locales bajo una impronta cinematográfica experimental de autor.",
-        descripcionEN: "Comprehensive exploration of analog soundscapes and local urban micro-narratives under an experimental authorial cinematic stamp.",
-        mediaHTML: '<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800">'
+        titulo: "Albores",
+        tags: ["documental", "ficción", "dirección", "diseño sonoro", "edición de video"],
+        descripcionES: `
+          <p>Me desempeñé como directora, montajista y diseñadora de sonido de Albores, un cortometraje de docuficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
+          <p>La historia sigue a Juan, un estudiante de una escuela agrotécnica que se siente cada vez más condicionado por la religiosidad de su entorno. A lo largo de una jornada escolar aparentemente cotidiana, deberá enfrentarse a una decisión que marcará su camino.</p>
+          <p>El proyecto fue realizado junto a Delfina Di Giacomo, Inés Emery, Clara Rapela y Luna Ciravegna, quienes formaron parte del equipo creativo y de producción.</p>
+        `,
+        descripcionEN: `
+          <p>I worked as the director, editor, and sound designer of Albores, a docufiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
+          <p>The film follows Juan, a student at an agricultural high school who feels increasingly constrained by the religious environment surrounding him. As he goes through what seems to be an ordinary school day, he is ultimately confronted with a decision that will shape his future.</p>
+          <p>The project was developed in collaboration with Delfina Di Giacomo, Inés Emery, Clara Rapela, and Luna Ciravegna, who were part of the film's creative and production team.</p>
+        `,
+        mediaHTML: '<iframe width="100%" height="450" src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:4px;"></iframe>'
       }
     ]
   },
@@ -191,7 +199,6 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
 
-        // SE ELIMINARON LOS TAGS DE AQUÍ
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}">
             <div class="pub-ano">${primeraPub.año}</div>
@@ -219,7 +226,6 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
 
-        // SE ELIMINARON LOS TAGS DE AQUÍ TAMBIÉN
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}">
             <div class="pub-ano">${item.pub.año}</div>
@@ -251,18 +257,17 @@ function verProyecto(idProyecto) {
     let contenidoHTML = '';
 
     proy.publicaciones.forEach(pub => {
-        // Marcamos las imágenes internas agregando el atributo 'data-lightbox' si existen
         let mediaRenderizado = pub.mediaHTML;
         if (mediaRenderizado && mediaRenderizado.includes('<img')) {
             mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true" style="cursor:pointer;"');
         }
 
-        // CAMBIADO EL SEPARADOR A " - " AQUÍ
+        // SE AGREGA MARGEN INFERIOR AL CONTENEDOR DE TAGS PARA DARLE MÁS AIRE Y SEPARARLO DE LA DESCRIPCIÓN
         contenidoHTML += `
             <div class="publicacion-item">
                 <div class="pub-ano">${pub.año}</div>
                 <div class="pub-titulo-interno">${pub.titulo}</div>
-                <div class="pub-tags">${pub.tags.join(' - ')}</div>
+                <div class="pub-tags" style="margin-bottom: 30px;">${pub.tags.join(' - ')}</div>
                 
                 <div class="descripcion-bloque-es">${pub.descripcionES}</div>
                 <div class="descripcion-bloque-en">${pub.descripcionEN}</div>
