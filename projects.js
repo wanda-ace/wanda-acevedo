@@ -78,10 +78,10 @@ const listaProyectos = [
       {
         idPub: "luc-p1",
         año: "2026",
-        titulo: "Lúcuma",
-        tags: ["Diseño Gráfico", "UX/UI", "Layout Design"],
-        descripcionES: "Diseño de contenido editorial para redes sociales de Lúcuma, medio de crítica musical latinoamericano. Incluye portadas y carruseles de Instagram para la sección de reseñas (piezas que combinan imagen, tipografía y selección de texto para generar una entrada al artículo completo).",
-        descripcionEN: "Editorial social media design for Lúcuma, a Latin American music criticism outlet. Covers and Instagram carousels for the reviews section (pieces that combine image, typography, and text curation to draw readers into the full article). The work involves reading each piece, understanding its voice, and deciding which fragments and visual hierarchies make people want to keep reading.",
+        titulo: "Lúcuma Medio Digital",
+        tags: ["Branding", "UX/UI", "Layout Design"],
+        descripcionES: "Generación de identidad visual completa y plantillas editoriales fijas destinadas a la difusión de reseñas críticas y lanzamientos discográficos independientes.",
+        descripcionEN: "Complete visual identity generation and static editorial templates aimed at promoting critical reviews and independent album releases.",
         mediaHTML: '<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800">'
       }
     ]
@@ -157,7 +157,7 @@ const textoBio = `
     <div class="bio-content-view">
         <div class="bio-es">
             <p><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
-            <p>Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creative emergentes.</p>
+            <p>Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
         <div class="bio-en">
             <p><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
@@ -171,8 +171,7 @@ let categoriaActual = 'todos';
 function irAHome() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
     document.getElementById('back-button-container').classList.add('hidden');
-    categoriaActual = 'todos';
-    renderizarGrillaProyectos(listaProyectos);
+    document.getElementById('dynamic-content').innerHTML = '';
 }
 
 function mostrarInfo() {
@@ -190,6 +189,7 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
     divGrilla.className = 'grid-proyectos';
 
     proyectosAVisualizar.forEach(proy => {
+        // Tomamos la primera publicación para extraer fielmente Año, Título, Tags y Descripción
         const primeraPub = proy.publicaciones[0];
         if (!primeraPub) return;
 
@@ -212,7 +212,7 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO
+// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO (Muestra las publicaciones sueltas con la misma estructura exacta)
 function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -287,18 +287,14 @@ function filtrarCategoria(cat) {
     categoriaActual = cat;
     document.getElementById('back-button-container').classList.add('hidden');
     
-    if (cat === 'todos') {
-        document.getElementById('filtros-comerciales').classList.add('hidden');
-        renderizarGrillaProyectos(listaProyectos);
+    if (cat === 'comercial') {
+        document.getElementById('filtros-comerciales').classList.remove('hidden');
     } else {
-        if (cat === 'comercial') {
-            document.getElementById('filtros-comerciales').classList.remove('hidden');
-        } else {
-            document.getElementById('filtros-comerciales').classList.add('hidden');
-        }
-        const filtrados = listaProyectos.filter(p => p.categoria === cat);
-        renderizarGrillaProyectos(filtrados);
+        document.getElementById('filtros-comerciales').classList.add('hidden');
     }
+
+    const filtrados = listaProyectos.filter(p => p.categoria === cat);
+    renderizarGrillaProyectos(filtrados);
 }
 
 function filtrarPorMetadato(tagBuscado) {
@@ -322,5 +318,4 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
-// Inicialización
 irAHome();
