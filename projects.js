@@ -175,12 +175,12 @@ const listaProyectos = [
 const textoBio = `
     <div class="bio-content-view">
         <div class="bio-es">
-            <p><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
-            <p>Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
+            <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
+            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
         <div class="bio-en">
-            <p><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
-            <p>Formed at the University of Buenos Aires (UBA) and with a strong technical focus, she researches contemporary narratives and emerging creative technologies.</p>
+            <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
+            <p style="margin-bottom: 16px;">Formed at the University of Buenos Aires (UBA) and with a strong technical focus, she researches contemporary narratives and emerging creative technologies.</p>
         </div>
     </div>
 `;
@@ -256,7 +256,7 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 2: VISTA INTERNA DEL PROYECTO
+// NIVEL 2: VISTA INTERNA DEL PROYECTO (ACTUALIZADO CON PARSEO DE CONTENEDORES RESPONSIVOS Y JERARQUÍAS AMPLIADAS)
 function verProyecto(idProyecto) {
     const proy = listaProyectos.find(p => p.id === idProyecto);
     if (!proy) return;
@@ -274,24 +274,40 @@ function verProyecto(idProyecto) {
 
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
-        if (mediaRenderizado && mediaRenderizado.includes('<img')) {
-            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true" style="cursor:pointer;"');
+        
+        // Corrección del reproductor de video para evitar recortes forzados en pantallas panorámicas (16:9 Nativo)
+        if (mediaRenderizado && mediaRenderizado.includes('<iframe')) {
+            mediaRenderizado = mediaRenderizado.replace(/width="[^"]*"/, '').replace(/height="[^"]*"/, '');
+            mediaRenderizado = `
+                <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                    ${mediaRenderizado.replace('<iframe', '<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"')}
+                </div>
+            `;
+        } else if (mediaRenderizado && mediaRenderizado.includes('<img')) {
+            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
-        // APLICAMOS MARGEN INFERIOR A CADA PÁRRAFO DE LAS DESCRIPCIONES PARA QUE NO SE VEAN PEQUEÑOS Y PEGADOS EN NINGÚN TEXTO
-        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px;">');
-        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px;">');
+        // Estilos e interlineado dinámico para que no queden todos los párrafos pegados (Renglón de separación automático)
+        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #000;">');
+        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #666;">');
 
         contenidoHTML += `
-            <div class="publicacion-item">
-                <div class="pub-ano">${pub.año}</div>
-                <div class="pub-titulo-interno">${pub.titulo}</div>
-                <div class="pub-tags" style="margin-bottom: 30px;">${pub.tags.join(' - ')}</div>
+            <div class="publicacion-item" style="margin-bottom: 50px;">
+                <!-- Año destacado -->
+                <div class="pub-ano" style="font-size: 18px; font-weight: 500; color: #999; margin-bottom: 4px;">${pub.año}</div>
                 
-                <div class="descripcion-bloque-es">${descES}</div>
-                <div class="descripcion-bloque-en">${descEN}</div>
+                <!-- Título jerárquicamente dominante -->
+                <div class="pub-titulo-interno" style="font-size: 32px; font-weight: 700; color: #000; margin-bottom: 8px; line-height: 1.2;">${pub.titulo}</div>
                 
-                <div class="pub-media-container">
+                <!-- Bloque de etiquetas grande -->
+                <div class="pub-tags" style="font-size: 16px; color: #8a6d82; font-weight: 500; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
+                
+                <!-- Textos en español e inglés -->
+                <div class="descripcion-bloque-es" style="margin-bottom: 25px;">${descES}</div>
+                <div class="descripcion-bloque-en" style="margin-bottom: 35px;">${descEN}</div>
+                
+                <!-- Caja contenedora multimedia -->
+                <div class="pub-media-container" style="width: 100%; margin-top: 25px;">
                     ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
                 </div>
             </div>
