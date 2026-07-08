@@ -103,7 +103,53 @@ const listaProyectos = [
         tags: ["animación", "experimental"],
         descripcionES: "<p>Proyecto de animación y diseño experimental desarrollado en el marco de la materia Proyecto Audiovisual I de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>",
         descripcionEN: "<p>Experimental animation and design project developed as part of the Audiovisual Project I course in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>",
-        mediaHTML: '<iframe width="100%" height="450" src="https://www.youtube.com/embed/cDYyfddqidw" title="universo - supermercado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:4px;"></iframe>'
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/cDYyfddqidw" title="universo - supermercado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+      }
+    ]
+  },
+  {
+    id: "aud-documental-del-azar",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-documentaldelazar.png",
+    publicaciones: [
+      {
+        idPub: "aud-azar-p1",
+        año: "2020",
+        titulo: "Documental del azar",
+        tags: ["documental", "mixed-media", "animación", "experimental"],
+        descripcionES: `
+          <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual I (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
+          <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representación y la experimentación visual.</p>
+          <p>Realizado en colaboración con Javiera Ceniceros y Clara Bunge.</p>
+        `,
+        descripcionEN: `
+          <p>"Documental del azar" is an experimental video created as the final project for the Audiovisual Project I course (Campos/Trilnick Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
+          <p>The project explores the intersection of documentary filmmaking and visual experimentation by combining documentary footage with hand-crafted interventions applied directly to individual frames, blurring the boundaries between documentation and artistic expression.</p>
+          <p>Created in collaboration with Javiera Ceniceros and Clara Bunge.</p>
+        `,
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/FKYOi1UyxpY" title="Documental del azar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+      }
+    ]
+  },
+  {
+    id: "aud-la-grulla",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-la grulla.png",
+    publicaciones: [
+      {
+        idPub: "aud-grulla-p1",
+        año: "2022",
+        titulo: "La Grulla",
+        tags: ["documental", "cámara", "iluminación", "dirección"],
+        descripcionES: `
+          <p>La Grulla es mi abuela. Desde la productora Doña Mutante realizamos este proyecto con el objetivo de construir un retrato íntimo de su espiritualidad y su templanza en el contexto de una ciudad sonora, invasiva y constantemente agitada.</p>
+          <p>Más que presentar ese entorno como un conflicto o una fuente de incomodidad, el retrato pone el foco en la manera en que ella habita ese espacio a través de sus rituales cotidianos.</p>
+        `,
+        descripcionEN: `
+          <p>La Grulla is my grandmother. Produced by Doña Mutante, this project aims to create an intimate portrait of her spirituality and inner strength within the context of a noisy, intrusive, and constantly bustling city.</p>
+          <p>Rather than portraying this environment as a source of conflict or discomfort, the portrait focuses on the way she inhabits it through her daily rituals, revealing a quiet coexistence between her inner world and the city's relentless rhythm.</p>
+        `,
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
   },
@@ -127,13 +173,10 @@ const listaProyectos = [
           <p>The film follows Juan, a student at an agricultural high school who feels increasingly constrained by the religious environment surrounding him. As he goes through what seems to be an ordinary school day, he is ultimately confronted with a decision that will shape his future.</p>
           <p>The project was developed in collaboration with Delfina Di Giacomo, Inés Emery, Clara Rapela, and Luna Ciravegna, who were part of the film's creative and production team.</p>
         `,
-        mediaHTML: '<iframe width="100%" height="450" src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:4px;"></iframe>'
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
   },
-  { id: "aud-2", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500", publicaciones: [{ idPub: "aud2-p1", año: "2024", titulo: "FADU / IDIS Investigación", tags: ["Audiovisual", "Research", "Archiving"], descripcionES: "<p>Pasantía académica orientada al diseño de imagen y sonido experimental, focalizando en el rescate de archivos multimediales.</p>", descripcionEN: "<p>Academic internship oriented towards experimental image and sound design, focusing on the rescue of multimedia archives.</p>", mediaHTML: "" }] },
-  { id: "aud-3", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=500", publicaciones: [{ idPub: "aud3-p1", año: "2025", titulo: "Sinfonía Urbana", tags: ["Motion Graphics", "Urban Architecture", "Editing"], descripcionES: "<p>Pieza rítmica de montaje continuo basada en el pulso visual frenético de las grandes metrópolis contemporáneas.</p>", descripcionEN: "<p>Rhythmic piece of continuous editing based on the frenetic visual pulse of major contemporary metropolises.</p>", mediaHTML: "" }] },
-  { id: "aud-4", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=500", publicaciones: [{ idPub: "aud4-p1", año: "2025", titulo: "Ensayo Sonoro UNQ", tags: ["Audiovisual", "Synthesis", "Real Time"], descripcionES: "<p>Composición electroacústica avanzada manipulada con tecnologías digitales y síntesis interactiva en tiempo real.</p>", descripcionEN: "<p>Advanced electroacoustic composition manipulated with digital technologies and interactive real-time synthesis.</p>", mediaHTML: "" }] },
   // ----------------------------------------------------
   // INSTALACIONES
   // ----------------------------------------------------
@@ -169,7 +212,7 @@ const listaProyectos = [
   { id: "foto-1", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500", publicaciones: [{ idPub: "fot1-p1", año: "2024", titulo: "Conciertos Under 2024", tags: ["Fotografía", "Analog Film", "High Contrast"], descripcionES: "<p>Registro fotográfico en blanco y negro de alto contraste capturado íntegramente con película analógica de alta sensibilidad forzada.</p>", descripcionEN: "<p>High-contrast black and white photographic registry entirely captured with pushed analog high-sensitivity film.</p>", mediaHTML: "" }] },
   { id: "foto-2", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500", publicaciones: [{ idPub: "fot2-p1", año: "2025", titulo: "Arquitectura Simétrica", tags: ["Fotografía", "Geometry", "Urban Architecture"], descripcionES: "<p>Ensayo visual enfocado en la ortogonalidad y la rigidez estructural de las fachadas brutalistas sobrevivientes en centros urbanos.</p>", descripcionEN: "<p>Visual essay focused on the orthogonality and structural rigidity of surviving brutalist facades in urban centers.</p>", mediaHTML: "" }] },
   { id: "foto-3", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500", publicaciones: [{ idPub: "fot3-p1", año: "2024", titulo: "Retratos de Artistas", tags: ["Fotografía", "Lighting", "Portraits"], descripcionES: "<p>Sesiones de estudio personalizadas para músicos utilizando iluminación puntual indirecta para acentuar el carácter dramático de la pieza.</p>", descripcionEN: "<p>Custom studio sessions for musicians utilizing precise indirect lighting to enhance the dramatic character of the piece.</p>", mediaHTML: "" }] },
-  { id: "foto-4", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500", publicaciones: [{ idPub: "fot4-p1", año: "2026", titulo: "Espacios Vacíos", tags: ["Fotografía", "Industrial Decay", "Fine Arts"], descripcionES: "<p>Exploración estética sobre el deterioro institucional a través del registro analógico detallado de locaciones industriales en desuso.</p>", descripcionEN: "<p>Aesthetic exploration regarding institutional decay through detailed analog registry of defunct industrial locations.</p>", mediaHTML: "" }] }
+  { id: "foto-4", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500", publicaciones: [{ idPub: "foto-4-p1", año: "2026", titulo: "Espacios Vacíos", tags: ["Fotografía", "Industrial Decay", "Fine Arts"], descripcionES: "<p>Exploración estética sobre el deterioro institucional a través del registro analógico detallado de locaciones industriales en desuso.</p>", descripcionEN: "<p>Aesthetic exploration regarding institutional decay through detailed analog registry of defunct industrial locations.</p>", mediaHTML: "" }] }
 ];
 
 const textoBio = `
@@ -199,7 +242,6 @@ function mostrarInfo() {
     document.getElementById('dynamic-content').innerHTML = textoBio;
 }
 
-// NIVEL 1: RENDER DE PROYECTOS INTEGRALES EN LA GRILLA DE CATEGORÍA
 function renderizarGrillaProyectos(proyectosAVisualizar) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -229,7 +271,6 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO
 function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -256,7 +297,6 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 2: VISTA INTERNA DEL PROYECTO (ACTUALIZADO CON PARSEO DE CONTENEDORES RESPONSIVOS Y JERARQUÍAS AMPLIADAS)
 function verProyecto(idProyecto) {
     const proy = listaProyectos.find(p => p.id === idProyecto);
     if (!proy) return;
@@ -275,7 +315,6 @@ function verProyecto(idProyecto) {
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
         
-        // Corrección del reproductor de video para evitar recortes forzados en pantallas panorámicas (16:9 Nativo)
         if (mediaRenderizado && mediaRenderizado.includes('<iframe')) {
             mediaRenderizado = mediaRenderizado.replace(/width="[^"]*"/, '').replace(/height="[^"]*"/, '');
             mediaRenderizado = `
@@ -284,29 +323,22 @@ function verProyecto(idProyecto) {
                 </div>
             `;
         } else if (mediaRenderizado && mediaRenderizado.includes('<img')) {
-            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
+            // Buscamos si hay imágenes individuales para darles soporte Lightbox
+            mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
-        // Estilos e interlineado dinámico para que no queden todos los párrafos pegados (Renglón de separación automático)
         let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #000;">');
         let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #666;">');
 
         contenidoHTML += `
             <div class="publicacion-item" style="margin-bottom: 50px;">
-                <!-- Año destacado -->
                 <div class="pub-ano" style="font-size: 18px; font-weight: 500; color: #999; margin-bottom: 4px;">${pub.año}</div>
-                
-                <!-- Título jerárquicamente dominante -->
                 <div class="pub-titulo-interno" style="font-size: 32px; font-weight: 700; color: #000; margin-bottom: 8px; line-height: 1.2;">${pub.titulo}</div>
-                
-                <!-- Bloque de etiquetas grande -->
                 <div class="pub-tags" style="font-size: 16px; color: #8a6d82; font-weight: 500; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
                 
-                <!-- Textos en español e inglés -->
                 <div class="descripcion-bloque-es" style="margin-bottom: 25px;">${descES}</div>
                 <div class="descripcion-bloque-en" style="margin-bottom: 35px;">${descEN}</div>
                 
-                <!-- Caja contenedora multimedia -->
                 <div class="pub-media-container" style="width: 100%; margin-top: 25px;">
                     ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
                 </div>
@@ -359,10 +391,11 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
-// EVENTO DE ESCUCHA EXCLUSIVO PARA IMÁGENES CON ATRIBUTO 'data-lightbox'
 document.addEventListener('click', function(event) {
-    if (event.target.hasAttribute('data-lightbox')) {
-        const urlImagen = event.target.getAttribute('src');
+    if (event.target.hasAttribute('data-lightbox') || event.target.closest('[data-lightbox]')) {
+        const targetImg = event.target.tagName === 'IMG' ? event.target : event.target.querySelector('img');
+        if (!targetImg) return;
+        const urlImagen = targetImg.getAttribute('src');
         const modal = document.getElementById('lightbox-modal');
         const imagenModal = document.getElementById('lightbox-img');
         
