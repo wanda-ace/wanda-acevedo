@@ -66,6 +66,7 @@ const listaProyectos = [
       }
     ]
   },
+
   // ----------------------------------------------------
   // FREELANCE
   // ----------------------------------------------------
@@ -88,6 +89,7 @@ const listaProyectos = [
   { id: "free-2", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500", publicaciones: [{ idPub: "fr2-p1", año: "2024", titulo: "Indie Clip: Solitary Boy", tags: ["Short Form", "Color Grading", "Directing"], descripcionES: "Registro audiovisual de campo y montaje rítmico final para el lanzamiento del videoclip oficial de la banda.", descripcionEN: "Audiovisual field recording and final rhythmic editing for the band's official music video launch.", mediaHTML: "" }] },
   { id: "free-3", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "fr3-p1", año: "2023", titulo: "Concierto Niceto Club", tags: ["Fotografía", "Concert Music", "Documentary"], descripcionES: "Cobertura fotográfica documental en condiciones de iluminación complejas dentro del marco del festival de música emergente.", descripcionEN: "Documentary photographic coverage in complex lighting conditions within the framework of the emerging music festival.", mediaHTML: "" }] },
   { id: "free-4", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?w=500", publicaciones: [{ idPub: "fr4-p1", año: "2024", titulo: "Identidad Visual: AlmaSense", tags: ["UX/UI", "AI Tools", "Branding"], descripcionES: "Optimización técnica de bibliotecas digitales y catalogación integral de assets automatizados asistidos por modelos de IA.", descripcionEN: "Technical optimization of digital libraries and comprehensive cataloging of automated assets assisted by AI models.", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // AUDIOVISUAL
   // ----------------------------------------------------
@@ -110,6 +112,7 @@ const listaProyectos = [
   { id: "aud-2", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500", publicaciones: [{ idPub: "aud2-p1", año: "2024", titulo: "FADU / IDIS Investigación", tags: ["Audiovisual", "Research", "Archiving"], descripcionES: "Pasantía académica orientada al diseño de imagen y sonido experimental, focalizando en el rescate de archivos multimediales.", descripcionEN: "Academic internship oriented towards experimental image and sound design, focusing on the rescue of multimedia archives.", mediaHTML: "" }] },
   { id: "aud-3", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=500", publicaciones: [{ idPub: "aud3-p1", año: "2025", titulo: "Sinfonía Urbana", tags: ["Motion Graphics", "Urban Architecture", "Editing"], descripcionES: "Pieza rítmica de montaje continuo basada en el pulso visual frenético de las grandes metrópolis contemporáneas.", descripcionEN: "Rhythmic piece of continuous editing based on the frenetic visual pulse of major contemporary metropolises.", mediaHTML: "" }] },
   { id: "aud-4", categoria: "audiovisual", portadaImg: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=500", publicaciones: [{ idPub: "aud4-p1", año: "2025", titulo: "Ensayo Sonoro UNQ", tags: ["Audiovisual", "Synthesis", "Real Time"], descripcionES: "Composición electroacústica avanzada manipulada con tecnologías digitales y síntesis interactiva en tiempo real.", descripcionEN: "Advanced electroacoustic composition manipulated with digital technologies and interactive real-time synthesis.", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // INSTALACIONES
   // ----------------------------------------------------
@@ -132,6 +135,7 @@ const listaProyectos = [
   { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.", descripcionEN: "Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.", mediaHTML: "" }] },
   { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.", descripcionEN: "Interactive spatial performance using granular synthesis manipulated through body motion sensors.", mediaHTML: "" }] },
   { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.", descripcionEN: "Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // DISEÑO GRÁFICO
   // ----------------------------------------------------
@@ -139,6 +143,7 @@ const listaProyectos = [
   { id: "dis-2", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis2-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.", descripcionEN: "High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.", mediaHTML: "" }] },
   { id: "dis-3", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis3-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.", descripcionEN: "Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.", mediaHTML: "" }] },
   { id: "dis-4", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis4-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva de alta gama.", descripcionEN: "Structural sustainable packaging design using minimal die-cuts and a restrictive high-end typographic palette.", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // FOTOGRAFÍA
   // ----------------------------------------------------
@@ -161,45 +166,30 @@ const textoBio = `
     </div>
 `;
 
-let categoriaActual = 'ninguna';
+let categoriaActual = 'todos';
 
-// Al ir al Home o refrescar, el contenedor dinámico queda totalmente vacío.
-// Solo se cargará contenido cuando el usuario elija una categoría del menú.
 function irAHome() {
-    categoriaActual = 'ninguna';
-    if(document.getElementById('filtros-comerciales')) {
-        document.getElementById('filtros-comerciales').classList.add('hidden');
-    }
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.add('hidden');
-    }
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = '';
 }
 
 function mostrarInfo() {
-    if(document.getElementById('filtros-comerciales')) {
-        document.getElementById('filtros-comerciales').classList.add('hidden');
-    }
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.add('hidden');
-    }
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = textoBio;
 }
 
-// NIVEL 1: RENDER DE LA GRILLA DE PROYECTOS PERTENECIENTES A LA CATEGORÍA SELECCIONADA
+// NIVEL 1: RENDER DE PROYECTOS INTEGRALES EN LA GRILLA DE CATEGORÍA
 function renderizarGrillaProyectos(proyectosAVisualizar) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
-
-    if (proyectosAVisualizar.length === 0) {
-        contenedor.innerHTML = '<div style="padding:20px; color:#666;">No hay proyectos en esta categoría.</div>';
-        return;
-    }
 
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
 
     proyectosAVisualizar.forEach(proy => {
+        // Tomamos la primera publicación para extraer fielmente Año, Título, Tags y Descripción
         const primeraPub = proy.publicaciones[0];
         if (!primeraPub) return;
 
@@ -211,7 +201,7 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}">
             <div class="pub-ano">${primeraPub.año}</div>
             <h3>${primeraPub.titulo}</h3>
-            <div class="pub-tags">${primeraPub.tags.join(' - ')}</div>
+            <div class="pub-tags">${primeraPub.tags.join(' / ')}</div>
             <div class="line-clamp-preview">
                 ${primeraPub.descripcionES} <span class="mas-link">[+]</span>
             </div>
@@ -222,7 +212,7 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
     contenedor.appendChild(divGrilla);
 }
 
-// RENDER CUANDO SE FILTRA POR METADATO/TAG INTERNO (DENTRO DE COMERCIAL/MARCAS)
+// NIVEL 1 MODIFICADO: CUANDO FILTRAS POR UN TAG ESPECÍFICO (Muestra las publicaciones sueltas con la misma estructura exacta)
 function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -239,7 +229,7 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}">
             <div class="pub-ano">${item.pub.año}</div>
             <h3>${item.pub.titulo}</h3>
-            <div class="pub-tags">${item.pub.tags.join(' - ')}</div>
+            <div class="pub-tags">${item.pub.tags.join(' / ')}</div>
             <div class="line-clamp-preview">
                 ${item.pub.descripcionES} <span class="mas-link">[+]</span>
             </div>
@@ -250,17 +240,13 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     contenedor.appendChild(divGrilla);
 }
 
-// NIVEL 2: VISTA INTERNA DETALLADA DEL PROYECTO
+// NIVEL 2: VISTA INTERNA DEL PROYECTO
 function verProyecto(idProyecto) {
     const proy = listaProyectos.find(p => p.id === idProyecto);
     if (!proy) return;
 
-    if(document.getElementById('filtros-comerciales')) {
-        document.getElementById('filtros-comerciales').classList.add('hidden');
-    }
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.remove('hidden');
-    }
+    document.getElementById('filtros-comerciales').classList.add('hidden');
+    document.getElementById('back-button-container').classList.remove('hidden');
 
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -271,22 +257,17 @@ function verProyecto(idProyecto) {
     let contenidoHTML = '';
 
     proy.publicaciones.forEach(pub => {
-        let mediaRenderizado = pub.mediaHTML;
-        if (mediaRenderizado && mediaRenderizado.includes('<img')) {
-            mediaRenderizado = mediaRenderizado.replace('<img', '<img data-lightbox="true"');
-        }
-
         contenidoHTML += `
             <div class="publicacion-item">
                 <div class="pub-ano">${pub.año}</div>
                 <div class="pub-titulo-interno">${pub.titulo}</div>
-                <div class="pub-tags">${pub.tags.join(' - ')}</div>
+                <div class="pub-tags">${pub.tags.join(' / ')}</div>
                 
                 <div class="descripcion-bloque-es">${pub.descripcionES}</div>
                 <div class="descripcion-bloque-en">${pub.descripcionEN}</div>
                 
                 <div class="pub-media-container">
-                    ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
+                    ${pub.mediaHTML || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
                 </div>
             </div>
         `;
@@ -298,49 +279,26 @@ function verProyecto(idProyecto) {
 }
 
 function volverALaGrilla() {
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.add('hidden');
-    }
+    document.getElementById('back-button-container').classList.add('hidden');
     filtrarCategoria(categoriaActual);
 }
 
-// ESTA FUNCIÓN MANEJA EL CLIC EN TUS CATEGORÍAS
 function filtrarCategoria(cat) {
-    // Normalizamos para evitar errores de mayúsculas o acentos en los llamados
-    let catNormalizada = cat.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    categoriaActual = cat;
+    document.getElementById('back-button-container').classList.add('hidden');
     
-    // Mapeo por si en el HTML usas "marcas" o "comercial" indistintamente
-    if (catNormalizada === 'marcas' || catNormalizada === 'comercial') {
-        catNormalizada = 'comercial';
-    }
-    if (catNormalizada === 'diseno grafico') {
-        catNormalizada = 'diseno';
+    if (cat === 'comercial') {
+        document.getElementById('filtros-comerciales').classList.remove('hidden');
+    } else {
+        document.getElementById('filtros-comerciales').classList.add('hidden');
     }
 
-    categoriaActual = catNormalizada;
-    
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.add('hidden');
-    }
-    
-    const panelFiltrosComerciales = document.getElementById('filtros-comerciales');
-    if (panelFiltrosComerciales) {
-        if (catNormalizada === 'comercial') {
-            panelFiltrosComerciales.classList.remove('hidden');
-        } else {
-            panelFiltrosComerciales.classList.add('hidden');
-        }
-    }
-
-    // Buscamos y renderizamos solo los proyectos que pertenezcan a dicha categoría
-    const filtrados = listaProyectos.filter(p => p.categoria === catNormalizada);
+    const filtrados = listaProyectos.filter(p => p.categoria === cat);
     renderizarGrillaProyectos(filtrados);
 }
 
 function filtrarPorMetadato(tagBuscado) {
-    if(document.getElementById('back-button-container')) {
-        document.getElementById('back-button-container').classList.add('hidden');
-    }
+    document.getElementById('back-button-container').classList.add('hidden');
     let publicacionesCoincidentes = [];
 
     listaProyectos.forEach(proy => {
@@ -360,26 +318,4 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
-// LIGHTBOX GLOBAL
-document.addEventListener('click', function(event) {
-    if (event.target.hasAttribute('data-lightbox')) {
-        const urlImagen = event.target.getAttribute('src');
-        const modal = document.getElementById('lightbox-modal');
-        const imagenModal = document.getElementById('lightbox-img');
-        
-        if (modal && imagenModal) {
-            imagenModal.src = urlImagen;
-            modal.className = 'lightbox-visible';
-        }
-    }
-});
-
-function cerrarImagen() {
-    const modal = document.getElementById('lightbox-modal');
-    if (modal) {
-        modal.className = 'lightbox-hidden';
-    }
-}
-
-// AL INICIAR: Arrancamos con la vista limpia (Home vacía). Solo se ve el menú.
 irAHome();
