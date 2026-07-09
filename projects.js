@@ -149,7 +149,17 @@ const listaProyectos = [
           <p>La Grulla is my grandmother. Produced by Doña Mutante, this project aims to create an intimate portrait of her spirituality and inner strength within the context of a noisy, intrusive, and constantly bustling city.</p>
           <p>Rather than portraying this environment as a source of conflict or discomfort, the portrait focuses on the way she inhabits it through her daily rituals, revealing a quiet coexistence between her inner world and the city's relentless rhythm.</p>
         `,
-        mediaHTML: '<iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        mediaHTML: `
+          <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+              <iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-03.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          </div>
+        `
       }
     ]
   },
@@ -315,15 +325,15 @@ function verProyecto(idProyecto) {
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
         
-        if (mediaRenderizado && mediaRenderizado.includes('<iframe')) {
+        // Si el mediaHTML incluye un iframe y NO ha sido formateado manualmente como grilla/objeto complejo
+        if (mediaRenderizado && mediaRenderizado.includes('<iframe') && !mediaRenderizado.includes('display: grid')) {
             mediaRenderizado = mediaRenderizado.replace(/width="[^"]*"/, '').replace(/height="[^"]*"/, '');
             mediaRenderizado = `
                 <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
                     ${mediaRenderizado.replace('<iframe', '<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"')}
                 </div>
             `;
-        } else if (mediaRenderizado && mediaRenderizado.includes('<img')) {
-            // Buscamos si hay imágenes individuales para darles soporte Lightbox
+        } else if (mediaRenderizado && mediaRenderizado.includes('<img') && !mediaRenderizado.includes('display: grid')) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
