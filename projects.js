@@ -153,7 +153,7 @@ const listaProyectos = [
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/la-grulla-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/la-grulla-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -185,7 +185,7 @@ const listaProyectos = [
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/okDMsnwzYII" title="Entre las Dos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -209,7 +209,7 @@ const listaProyectos = [
         titulo: "Urdimbre: Morfologías e identidad en el espacio público",
         tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
         descripcionES: `
-          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>Urdimbre is una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
           <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
           <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
           <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Exhibiciones</strong></p>
@@ -228,7 +228,7 @@ const listaProyectos = [
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/GC83fCLqHPs" title="Urdimbre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
+          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -294,18 +294,18 @@ const listaProyectos = [
   // FOTOGRAFÍA
   // ----------------------------------------------------
   { id: "foto-1", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500", publicaciones: [{ idPub: "fot1-p1", año: "2024", titulo: "Conciertos Under 2024", tags: ["Fotografía", "Analog Film", "High Contrast"], descripcionES: "<p>Registro fotográfico en blanco y negro de alto contraste capturado íntegramente con película analógica de alta sensibilidad forzada.</p>", descripcionEN: "<p>High-contrast black and white photographic registry entirely captured with pushed analog high-sensitivity film.</p>", mediaHTML: "" }] },
-  { id: "foto-2", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500", publicaciones: [{ idPub: "fot2-p1", año: "2025", titulo: "Arquitectura Simétrica", tags: ["Fotografía", "Geometry", "Urban Architecture"], descripcionES: "<p>Ensayo visual enfocado en la ortogonalidad y la rigidez estructural de las fachadas brutalistas sobrevivientes en centros urbanos.</p>", descripcionEN: "<p>Visual essay focused on the orthogonality and structural rigidity of surviving brutalist facades in urban centers.</p>", mediaHTML: "" }] },
+  { id: "foto-2", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500", publicaciones: [{ idPub: "fot2-p1", año: "2025", titulo: "Arquitectura Simétrica", tags: ["Fotografía", "Geometry", "Urban Architecture"], descripcionES: "<p>Ensayo visual enfocado en la ortogonalidad y la rigidez estructural de las fachadas brutalistas sobrevivientes en centros urbanos.</p>", descripcionEN: "<p>Visual essay focused on the orthogonal and structural rigidity of surviving brutalist facades in urban centers.</p>", mediaHTML: "" }] },
   { id: "foto-3", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500", publicaciones: [{ idPub: "fot3-p1", año: "2024", titulo: "Retratos de Artistas", tags: ["Fotografía", "Lighting", "Portraits"], descripcionES: "<p>Sesiones de estudio personalizadas para músicos utilizando iluminación puntual indirecta para acentuar el carácter dramático de la pieza.</p>", descripcionEN: "<p>Custom studio sessions for musicians utilizing precise indirect lighting to enhance the dramatic character of the piece.</p>", mediaHTML: "" }] },
   { id: "foto-4", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500", publicaciones: [{ idPub: "foto-4-p1", año: "2026", titulo: "Espacios Vacíos", tags: ["Fotografía", "Industrial Decay", "Fine Arts"], descripcionES: "<p>Exploración estética sobre el deterioro institucional a través del registro analógico detallado de locaciones industriales en desuso.</p>", descripcionEN: "<p>Aesthetic exploration regarding institutional decay through detailed analog registry of defunct industrial locations.</p>", mediaHTML: "" }] }
 ];
 
 const textoBio = `
-    <div class="bio-content-view">
-        <div class="bio-es">
+    <div class="bio-content-view" style="font-family: Open Sauce, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
+        <div class="bio-es" style="font-weight: 500; font-size: 15px; line-height: 1.6; color: #000;">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
-            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creative emergentes.</p>
+            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
-        <div class="bio-en">
+        <div class="bio-en" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #777;">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
             <p style="margin-bottom: 16px;">Formed at the University of Buenos Aires (UBA) and with a strong technical focus, she researches contemporary narratives and emerging creative technologies.</p>
         </div>
@@ -332,6 +332,8 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
 
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
+    divGrilla.style.display = 'grid';
+    divGrilla.style.width = '100%';
 
     proyectosAVisualizar.forEach(proy => {
         const primeraPub = proy.publicaciones[0];
@@ -340,13 +342,15 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
+        tarjeta.style.fontFamily = 'Open Sauce, sans-serif';
+        tarjeta.style.width = '100%';
 
         tarjeta.innerHTML = `
-            <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}">
-            <div class="pub-ano">${primeraPub.año}</div>
-            <h3>${primeraPub.titulo}</h3>
-            <div class="line-clamp-preview">
-                ${primeraPub.descripcionES} <span class="mas-link">[+]</span>
+            <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}" style="width: 100%;">
+            <div class="pub-ano" style="font-family: Open Sauce, sans-serif;">${primeraPub.año}</div>
+            <h3 style="font-family: Open Sauce, sans-serif;">${primeraPub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Open Sauce, sans-serif; font-weight: 500;">
+                ${primeraPub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
         divGrilla.appendChild(tarjeta);
@@ -361,18 +365,22 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
 
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
+    divGrilla.style.display = 'grid';
+    divGrilla.style.width = '100%';
 
     publicacionesFiltradas.forEach(item => {
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
+        tarjeta.style.fontFamily = 'Open Sauce, sans-serif';
+        tarjeta.style.width = '100%';
 
         tarjeta.innerHTML = `
-            <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}">
-            <div class="pub-ano">${item.pub.año}</div>
-            <h3>${item.pub.titulo}</h3>
-            <div class="line-clamp-preview">
-                ${item.pub.descripcionES} <span class="mas-link">[+]</span>
+            <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}" style="width: 100%;">
+            <div class="pub-ano" style="font-family: Open Sauce, sans-serif;">${item.pub.año}</div>
+            <h3 style="font-family: Open Sauce, sans-serif;">${item.pub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Open Sauce, sans-serif; font-weight: 500;">
+                ${item.pub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
         divGrilla.appendChild(tarjeta);
@@ -393,13 +401,14 @@ function verProyecto(idProyecto) {
 
     const divProyecto = document.createElement('div');
     divProyecto.className = 'proyecto-interno';
+    divProyecto.style.width = '100%';
+    divProyecto.style.maxWidth = '100%';
     
     let contenidoHTML = '';
 
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
         
-        // Si el mediaHTML incluye un iframe y NO ha sido formateado manualmente como grilla/objeto complejo
         if (mediaRenderizado && mediaRenderizado.includes('<iframe') && !mediaRenderizado.includes('display: grid')) {
             mediaRenderizado = mediaRenderizado.replace(/width="[^"]*"/, '').replace(/height="[^"]*"/, '');
             mediaRenderizado = `
@@ -411,17 +420,20 @@ function verProyecto(idProyecto) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
-        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #000;">');
-        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #666;">');
+        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #000; font-weight: 500;">');
+        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
 
         contenidoHTML += `
-            <div class="publicacion-item" style="margin-bottom: 50px;">
+            <div class="publicacion-item" style="margin-bottom: 50px; font-family: Open Sauce, sans-serif; width: 100%;">
                 <div class="pub-ano" style="font-size: 18px; font-weight: 500; color: #999; margin-bottom: 4px;">${pub.año}</div>
                 <div class="pub-titulo-interno" style="font-size: 32px; font-weight: 700; color: #000; margin-bottom: 8px; line-height: 1.2;">${pub.titulo}</div>
-                <div class="pub-tags" style="font-size: 16px; color: #8a6d82; font-weight: 500; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
+                <div class="pub-tags" style="font-size: 16px; color: #76C4AA; font-weight: 500; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
                 
-                <div class="descripcion-bloque-es" style="margin-bottom: 25px;">${descES}</div>
-                <div class="descripcion-bloque-en" style="margin-bottom: 35px;">${descEN}</div>
+                <!-- Estructura de Dos Columnas para los Idiomas -->
+                <div class="idiomas-columnas-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%; margin-bottom: 35px;">
+                    <div class="descripcion-bloque-es">${descES}</div>
+                    <div class="descripcion-bloque-en">${descEN}</div>
+                </div>
                 
                 <div class="pub-media-container" style="width: 100%; margin-top: 25px;">
                     ${mediaRenderizado || '<div style="font-size:11px;color:#999999;padding:20px;border:1px dashed #ddd;text-align:center;">[ espacio multimedia vacío / empty media slot ]</div>'}
