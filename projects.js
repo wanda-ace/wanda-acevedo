@@ -164,6 +164,80 @@ const listaProyectos = [
     ]
   },
   {
+    id: "aud-entre-las-dos",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-entre-las-dos.png",
+    publicaciones: [
+      {
+        idPub: "aud-entre-p1",
+        año: "2022",
+        titulo: "Entre las Dos",
+        tags: ["cámara", "iluminación", "dirección"],
+        descripcionES: `
+          <p>"Entre las Dos" es un proyecto realizado en el marco de la materia Iluminación y Cámara II (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
+          <p>En este proyecto me desempeñé como directora y diseñadora de iluminación, desarrollando una propuesta visual centrada en la construcción de la atmósfera y la narrativa a través de la luz.</p>
+        `,
+        descripcionEN: `
+          <p>“Entre las Dos” is a project developed as part of the Lighting and Camera II course (Valansi Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
+          <p>For this project, I worked as the director and lighting designer, developing the visual approach through the use of lighting to shape the film's atmosphere and narrative.</p>
+        `,
+        mediaHTML: `
+          <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+              <iframe src="https://www.youtube.com/embed/okDMsnwzYII" title="Entre las Dos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-03.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-04.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-05.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-06.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: "aud-urdimbre-morfologias",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-urdimbre.png",
+    publicaciones: [
+      {
+        idPub: "aud-urdimbre-p1",
+        año: "2022",
+        titulo: "Urdimbre: Morfologías e identidad en el espacio público",
+        tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
+        descripcionES: `
+          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
+          <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
+          <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Exhibiciones</strong></p>
+          <p style="margin-bottom: 4px;">2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
+          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, España.</p>
+        `,
+        descripcionEN: `
+          <p>Urdimbre is an interactive audiovisual installation developed throughout 2022 that explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
+          <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
+          <p>Project done in collaboration with Delfina Di Giacomo.</p>
+          <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Exhibitions</strong></p>
+          <p style="margin-bottom: 4px;">2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
+          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, Spain.</p>
+        `,
+        mediaHTML: `
+          <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+              <iframe src="https://www.youtube.com/embed/GC83fCLqHPs" title="Urdimbre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+          <div style="font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          </div>
+        `
+      }
+    ]
+  },
+  {
     id: "aud-albores",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-albores.png",
@@ -207,7 +281,7 @@ const listaProyectos = [
     ]
   },
   { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", mediaHTML: "" }] },
-  { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
+  { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
   { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", mediaHTML: "" }] },
   // ----------------------------------------------------
   // DISEÑO GRÁFICO
@@ -229,7 +303,7 @@ const textoBio = `
     <div class="bio-content-view">
         <div class="bio-es">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
-            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
+            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creative emergentes.</p>
         </div>
         <div class="bio-en">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
