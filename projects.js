@@ -94,7 +94,7 @@ const listaProyectos = [
       {
         idPub: "aud-moyo-p1",
         año: "2023",
-        titulo: "Moyo",
+        titulo: "moyo",
         tags: ["cortos de animación 2D"],
         descripcionES: `
           <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
