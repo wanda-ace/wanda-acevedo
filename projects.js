@@ -381,26 +381,72 @@ const listaProyectos = [
       }
     ]
   },
-  { id: "proy-inst-urdimbre-madrid", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst-urd-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", mediaHTML: "" }] },
-  { id: "proy-inst-frecuencias", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "inst-frec-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
-  { id: "proy-inst-humedades", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst-hum-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", mediaHTML: "" }] },
+  { 
+    id: "proy-inst-urdimbre-madrid", 
+    categoria: "instalaciones", 
+    portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", 
+    publicaciones: [
+      { 
+        idPub: "inst-urd-p1", 
+        año: "2024", 
+        titulo: "Urdimbre - Madrid", 
+        tags: ["Instalación", "Vector Art", "Textiles"], 
+        descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", 
+        descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", 
+        mediaHTML: "" 
+      }
+    ] 
+  },
+  { 
+    id: "proy-inst-frecuencias", 
+    categoria: "instalaciones", 
+    portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", 
+    publicaciones: [
+      { 
+        idPub: "inst-frec-p1", 
+        año: "2025", 
+        titulo: "Frecuencias Latentes", 
+        tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], 
+        descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", 
+        descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", 
+        mediaHTML: "" 
+      }
+    ] 
+  },
+  { 
+    id: "proy-inst-humedades", 
+    categoria: "instalaciones", 
+    portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", 
+    publicaciones: [
+      { 
+        idPub: "inst-hum-p1", 
+        año: "2026", 
+        titulo: "Humedades Digitales", 
+        tags: ["Instalación", "Generative Art", "Algorithms"], 
+        descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", 
+        descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", 
+        mediaHTML: "" 
+      }
+    ] 
+  },
 
   // ====================================================
   // PROYECTOS -> DISEÑO GRÁFICO
   // ====================================================
-  { id: "proy-dis-residencial", categoria: "diseno grafico", portadaImg: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=500", publicaciones: [{ idPub: "dis-res-p1", año: "2025", titulo: "Branding Residencial", tags: ["Branding", "Typography", "Editorial Layout"], descripcionES: "<p>Desarrollo de identidad de marca premium y sistemas tipográficos limpios orientados al sector de desarrollos inmobiliarios de lujo.</p>", descripcionEN: "<p>Premium brand identity development and clean typographic systems tailored for the luxury real estate development sector.</p>", mediaHTML: "" }] },
-  { id: "proy-dis-camping", categoria: "diseno grafico", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis-camp-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "<p>Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.</p>", descripcionEN: "<p>High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.</p>", mediaHTML: "" }] },
-  { id: "proy-dis-adeahealth", categoria: "diseno grafico", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis-adea-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "<p>Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.</p>", descripcionEN: "<p>Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.</p>", mediaHTML: "" }] },
-  { id: "proy-dis-cosecha-pack", categoria: "diseno grafico", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis-cospack-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "<p>Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva.</p>", descripcionEN: "<p>Structural design of sustainable packaging using minimal dies and a restrictive typographic palette.</p>", mediaHTML: "" }] },
-
-  // ====================================================
-  // PROYECTOS -> FOTOGRAFÍA
-  // ====================================================
-  // (Lista para rellenar cuando agregues tus sets fotográficos)
-  {
-    id: "proy-foto-vacio",
-    categoria: "fotografia",
-    portadaImg: "",
-    publicaciones: []
+  { 
+    id: "proy-dis-residencial", 
+    categoria: "diseno grafico", 
+    portadaImg: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=500", 
+    publicaciones: [
+      { 
+        idPub: "dis-res-p1", 
+        año: "2025", 
+        titulo: "Branding Residential", 
+        tags: ["Branding", "Typography", "Editorial Layout"], 
+        descripcionES: "<p>Desarrollo de identidad de marca premium y sistemas tipográficos limpios orientados al sector de desarrollos residenciales.</p>", 
+        descripcionEN: "<p>Premium brand identity development and clean typographic systems tailored for the residential development sector.</p>", 
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800">' 
+      }
+    ] 
   }
 ];
