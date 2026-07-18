@@ -79,9 +79,9 @@ const listaProyectos = [
         idPub: "aud-mem-p1",
         año: "2023",
         titulo: "memoria",
-        tags: ["Animación experimental"],
-        descripcionES: "<p>“memoria” es un proyecto de animación 2d resultado de una experimentación de diferentes técnicas audiovisuales: fotografía, imagen en movimiento, dibujos en papel y digitales. Fue realizado para la Universidad de Buenos Aires en el marco de los 40 años de Democracia en Argentina.</p>",
-        descripcionEN: "<p>“memoria” is a 2D animation project resulting from experimentation with various audiovisual techniques: photography, moving images, and both paper and digital drawings. It was produced for the University of Buenos Aires to mark 40 years of democracy in Argentina.</p>",
+        tags: ["animación experimental"],
+        descripcionES: "<p>“memoria” es un proyecto de animación resultado de una experimentación de diferentes técnicas audiovisuales: fotografía, imagen en movimiento, dibujos en papel y digitales. Fue realizado para la Universidad de Buenos Aires en el marco de los 40 años de Democracia en Argentina.</p>",
+        descripcionEN: "<p>“memoria” is an animation project resulting from experimentation with various audiovisual techniques: photography, moving images, and both paper and digital drawings. It was produced for the University of Buenos Aires in the context of the 40th anniversary of democracy in Argentina.</p>",
         mediaHTML: '<iframe src="https://www.youtube.com/embed/_fNHM4maVpA" title="memoria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
@@ -95,14 +95,14 @@ const listaProyectos = [
         idPub: "aud-moyo-p1",
         año: "2023",
         titulo: "Moyo",
-        tags: ["Cortos de animación 2D"],
+        tags: ["cortos de animación 2D"],
         descripcionES: `
           <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
-          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #000; margin-top: 25px; margin-bottom: 10px;">Proceso de construcción:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #000; margin-top: 25px; 
         `,
         descripcionEN: `
           <p>2D animation project blending paper-based drawing techniques with digital drawing.</p>
-          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #777; margin-top: 25px; margin-bottom: 10px;">Construction process:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #777; margin-top: 25px;
         `,
         mediaHTML: `
           <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
@@ -137,7 +137,7 @@ const listaProyectos = [
         idPub: "aud-cero-p1",
         año: "2023",
         titulo: "cero, nueve",
-        tags: ["Video experimental"],
+        tags: ["video experimental"],
         descripcionES: "<p>Interpretación audiovisual de un sueño.</p>",
         descripcionEN: "<p>Audiovisual interpretation of a dream.</p>",
         mediaHTML: `
@@ -161,23 +161,21 @@ const listaProyectos = [
       {
         idPub: "aud-urdimbre-p1",
         año: "2022",
-        titulo: "Urdimbre: Morfologías e identidad en el espacio público",
-        tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
+        titulo: "urdimbre: morfologías e identidad en el espacio público",
+        tags: ["video experimental"],
         descripcionES: `
-          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>"Urdimbre" es un collage audiovisual desarrollada durante 2022 junto a Delfina Di Giacomo. Explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
           <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
-          <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
           <p><strong>Exhibiciones</strong></p>
-          <p>2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
-          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, España.</p>
+          <p>2022 – <a href="https://www.instagram.com/muestramagma/" target="_blank">Muestra MAGMA</a>, Centro Hipermediático Experimental Latinoamericano (<a href="https://chela.org.ar/" target="_blank">CHELA</a>), Buenos Aires, Argentina.</p>
+          <p>2024 – <a href="https://thesibarist.com/es/magazine/asi-fue-la-inauguracion-de-pensar-la-ciudad/" target="_blank">Pensar la Ciudad</a>, The Sibarist, Madrid, España.</p>
         `,
         descripcionEN: `
-          <p>Urdimbre is an interactive audiovisual installation developed throughout 2022 that explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
+          <p>"Urdimbre" is an audiovisual collage developed throughout 2022 in collaboration with Delfina Di Giacomo. It explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
           <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
-          <p>Project done in collaboration with Delfina Di Giacomo.</p>
           <p><strong>Exhibitions</strong></p>
-          <p>2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
-          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, Spain.</p>
+          <p>2022 – <a href="https://www.instagram.com/muestramagma/" target="_blank">MAGMA Exhibition</a>, Latin American Experimental Hypermedia Center (<a href="https://chela.org.ar/" target="_blank">CHELA</a>), Buenos Aires, Argentina.</p>
+          <p>2024 – <a href="https://thesibarist.com/es/magazine/asi-fue-la-inauguracion-de-pensar-la-ciudad/" target="_blank">Pensar la Ciudad</a>, The Sibarist, Madrid, Spain.</p>
         `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
@@ -185,7 +183,7 @@ const listaProyectos = [
           </div>
           <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
-              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.jpg" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
           </div>
         `
@@ -200,15 +198,13 @@ const listaProyectos = [
       {
         idPub: "aud-entre-p1",
         año: "2022",
-        titulo: "Entre las Dos",
-        tags: ["cámara", "iluminación", "dirección"],
+        titulo: "entre las dos",
+        tags: ["corto ficcional experimental"],
         descripcionES: `
-          <p>"Entre las Dos" es un proyecto realizado en el marco de la materia Iluminación y Cámara II (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
-          <p>En este proyecto me desempeñé como directora y diseñadora de iluminación, desarrollando una propuesta visual centrada en la construcción de la atmósfera y la narrativa a través de la luz.</p>
+          <p>"Entre las Dos" es un corto realizado en el marco de la materia Iluminación y Cámara 2 (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA). En este proyecto me desempeñé como <b>directora<b> y <b>diseñadora de iluminación<b>.</p>
         `,
         descripcionEN: `
-          <p>“Entre las Dos” is a project developed as part of the Lighting and Camera II course (Valansi Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
-          <p>For this project, I worked as the director and lighting designer, developing the visual approach through the use of lighting to shape the film's atmosphere and narrative.</p>
+          <p>“Entre las Dos” is a short film developed as part of the Lighting and Camera 2 course in the Image and Sound Design career at the University of Buenos Aires (UBA). For this project, I worked as the <b>director<b> and <b>lighting designer<b>.</p>
         `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
@@ -235,8 +231,8 @@ const listaProyectos = [
       {
         idPub: "aud-grulla-p1",
         año: "2022",
-        titulo: "La Grulla",
-        tags: ["documental", "cámara", "iluminación", "dirección"],
+        titulo: "la grulla",
+        tags: ["docu-ficción"],
         descripcionES: `
           <p>La Grulla es mi abuela. Desde la productora Doña Mutante realizamos este proyecto con el objetivo de construir un retrato íntimo de su espiritualidad y su templanza en el contexto de una ciudad sonora, invasiva y constantemente agitada.</p>
           <p>Más que presentar ese entorno como un conflicto o una fuente de incomodidad, el retrato pone el foco en la manera en que ella habita ese espacio a través de sus rituales cotidianos.</p>
@@ -267,15 +263,15 @@ const listaProyectos = [
       {
         idPub: "aud1-p1",
         año: "2023",
-        titulo: "Albores",
-        tags: ["documental", "ficción", "dirección", "diseño sonoro", "edición de video"],
+        titulo: "albores",
+        tags: ["docu-ficción"],
         descripcionES: `
-          <p>Me desempeñé como directora, montajista y diseñadora de sonido de Albores, un cortometraje de docuficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
+          <p>Trabajé como <b>directora<b>, <b>montajista<b> y <b>diseñadora de sonido<b> de "Albores", un cortometraje de docu-ficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
           <p>La historia sigue a Juan, un estudiante de una escuela agrotécnica que se siente cada vez más condicionado por la religiosidad de su entorno. A lo largo de una jornada escolar aparentemente cotidiana, deberá enfrentarse a una decisión que marcará su camino.</p>
           <p>El proyecto fue realizado junto a Delfina Di Giacomo, Inés Emery, Clara Rapela y Luna Ciravegna, quienes formaron parte del equipo creativo y de producción.</p>
         `,
         descripcionEN: `
-          <p>I worked as the director, editor, and sound designer of Albores, a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
+          <p>I worked as the <b>director<b>, <b>editor<b>, and <b>sound designer<b> of "Albores", a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
           <p>The film follows Juan, a student at an agricultural high school who feels increasingly constrained by the religious environment surrounding him. As he goes through what seems to be an ordinary school day, he is ultimately confronted with a decision that will shape his future.</p>
           <p>The project was developed in collaboration with Delfina Di Giacomo, Inés Emery, Clara Rapela, and Luna Ciravegna, who were part of the film's creative and production team.</p>
         `,
@@ -291,15 +287,15 @@ const listaProyectos = [
       {
         idPub: "aud-azar-p1",
         año: "2020",
-        titulo: "Documental del azar",
-        tags: ["documental", "mixed-media", "animación", "experimental"],
+        titulo: "documental del azar",
+        tags: ["mixed-media"],
         descripcionES: `
-          <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual I (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
+          <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual 1 (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
           <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representación y la experimentación visual.</p>
           <p>Realizado en colaboración con Javiera Ceniceros y Clara Bunge.</p>
         `,
         descripcionEN: `
-          <p>"Documental del azar" is an experimental video created as the final project for the Audiovisual Project I course (Campos/Trilnick Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
+          <p>"Documental del azar" is an experimental video created as the final project for the Audiovisual Project 1 course in the Image and Sound Design career at the University of Buenos Aires (UBA).</p>
           <p>The project explores the intersection of documentary filmmaking and visual experimentation by combining documentary footage with hand-crafted interventions applied directly to individual frames, blurring the boundaries between documentation and artistic expression.</p>
           <p>Created in collaboration with Javiera Ceniceros and Clara Bunge.</p>
         `,
