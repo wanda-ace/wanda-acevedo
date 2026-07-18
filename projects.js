@@ -66,7 +66,6 @@ const listaProyectos = [
       }
     ]
   },
-
   // ----------------------------------------------------
   // AUDIOVISUAL
   // ----------------------------------------------------
@@ -202,10 +201,10 @@ const listaProyectos = [
         tags: ["corto ficcional experimental"],
         descripcionES: `
           <p>"Entre las Dos" es un corto realizado en el marco de la materia Iluminación y Cámara 2 (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA). En este proyecto me desempeñé como <b>directora</b> y <b>diseñadora de iluminación</b>.</p>
-        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
+        `,
         descripcionEN: `
           <p>“Entre las Dos” is a short film developed as part of the Lighting and Camera 2 course in the Image and Sound Design career at the University of Buenos Aires (UBA). For this project, I worked as the <b>director</b> and <b>lighting designer</b>.</p>
-        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
+        `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/okDMsnwzYII" title="Entre las Dos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
@@ -267,10 +266,10 @@ const listaProyectos = [
         tags: ["docu-ficción"],
         descripcionES: `
           <p>Trabajé como <b>directora</b>, <b>montajista</b> y <b>diseñadora de sonido</b> de "Albores", un cortometraje de docu-ficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
-        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
+        `,
         descripcionEN: `
           <p>I worked as the <b>director</b>, <b>editor</b>, and <b>sound designer</b> of "Albores", a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
-        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
+        `,
         mediaHTML: '<iframe src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
@@ -299,30 +298,73 @@ const listaProyectos = [
       }
     ]
   },
-
   // ----------------------------------------------------
   // FREELANCE
   // ----------------------------------------------------
   {
-    id: "free-lucuma",
+    id: "free-flakkaboem-sessions",
     categoria: "freelance",
-    portadaImg: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500",
+    portadaImg: "img/portadas/portada-cero-nueve.png",
     publicaciones: [
       {
-        idPub: "luc-p1",
-        año: "2026",
-        titulo: "Lúcuma Medio Digital",
-        tags: ["Branding", "UX/UI", "Layout Design"],
-        descripcionES: "<p>Generación de identidad visual completa y plantillas editoriales fijas destinadas a la difusión de reseñas críticas y lanzamientos discográficos independientes.</p>",
-        descripcionEN: "<p>Complete visual identity generation and static editorial templates aimed at promoting critical reviews and independent album releases.</p>",
-        mediaHTML: '<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800">'
+        idPub: "free-flakka-p1",
+        año: "2024",
+        titulo: "Flakkaboem Sessions",
+        tags: ["live music sessions"],
+        descripcionES: "<p>Postproducción de material audiovisual para sesiones de música en vivo, incluyendo <b> edición de video</b>, <b>corrección de color</b>, <b> sincronización multicámara</b>  y selección de fragmentos para la creación de contenido en formato vertical destinado a Instagram Reels y YouTube Shorts.</p>",
+        descripcionEN: "<p>Post-production of audiovisual content for live music sessions, including <b> video editing</b> , <b>color correction</b>, <b> multicamera synchronization</b>, and the selection of highlights for short-form vertical content on Instagram Reels and YouTube Shorts.</p>",
+        mediaHTML: `
+          <div style="display: flex; flex-direction: column; gap: 30px; width: 100%;">
+              <!-- Fila 1 -->
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; align-items: start;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/S5clh2xefZw" title="Flakkaboem Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 177.77%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C--qANCoZuu/embed" title="Flakkaboem Insta 1" frameborder="0" scrolling="no" allowtransparency="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 2 -->
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; align-items: start;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/KIdcWdvYjyI" title="Flakkaboem Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 177.77%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C9m0jSiofec/embed" title="Flakkaboem Insta 2" frameborder="0" scrolling="no" allowtransparency="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 3 -->
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; align-items: start;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/4ShSn0kQJeE" title="Flakkaboem Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 177.77%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C6wLgRnIE0y/embed" title="Flakkaboem Insta 3" frameborder="0" scrolling="no" allowtransparency="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 4 -->
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; align-items: start;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/WMMbMiQEcWA" title="Flakkaboem Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 177.77%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C5EKt3_oolW/embed" title="Flakkaboem Insta 4" frameborder="0" scrolling="no" allowtransparency="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 5 -->
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; align-items: start;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/EA6wyKV7xs4" title="Flakkaboem Video 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 177.77%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C3-b801Ivpj/embed" title="Flakkaboem Insta 5" frameborder="0" scrolling="no" allowtransparency="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+          </div>
+        `
       }
     ]
   },
-  { id: "free-2", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500", publicaciones: [{ idPub: "fr2-p1", año: "2024", titulo: "Indie Clip: Solitary Boy", tags: ["Short Form", "Color Grading", "Directing"], descripcionES: "<p>Registro audiovisual de campo y montaje rítmico final para el lanzamiento del videoclip oficial de la banda.</p>", descripcionEN: "<p>Audiovisual field recording and final rhythmic editing for the band's official music video launch.</p>", mediaHTML: "" }] },
-  { id: "free-3", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "fr3-p1", año: "2023", titulo: "Concierto Niceto Club", tags: ["Fotografía", "Concert Music", "Documentary"], descripcionES: "<p>Cobertura fotográfica documental en condiciones de iluminación complejas dentro del marco del festival de música emergente.</p>", descripcionEN: "<p>Documentary photographic coverage in complex lighting conditions within the framework of the emerging music festival.</p>", mediaHTML: "" }] },
-  { id: "free-4", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?w=500", publicaciones: [{ idPub: "fr4-p1", año: "2024", titulo: "Identidad Visual: AlmaSense", tags: ["UX/UI", "AI Tools", "Branding"], descripcionES: "<p>Optimización técnica de bibliotecas digitales y catalogación integral de assets automatizados asistidos por modelos de IA.</p>", descripcionEN: "<p>Technical optimization of digital libraries and comprehensive cataloging of automated assets assisted by AI models.</p>", mediaHTML: "" }] },
-
   // ----------------------------------------------------
   // INSTALACIONES
   // ----------------------------------------------------
@@ -345,7 +387,6 @@ const listaProyectos = [
   { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", mediaHTML: "" }] },
   { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
   { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", mediaHTML: "" }] },
-
   // ----------------------------------------------------
   // DISEÑO GRÁFICO
   // ----------------------------------------------------
@@ -353,7 +394,6 @@ const listaProyectos = [
   { id: "dis-2", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis2-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "<p>Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.</p>", descripcionEN: "<p>High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.</p>", mediaHTML: "" }] },
   { id: "dis-3", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis3-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "<p>Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.</p>", descripcionEN: "<p>Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.</p>", mediaHTML: "" }] },
   { id: "dis-4", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis4-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "<p>Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva de alta gama.</p>", descripcionEN: "<p>Structural sustainable packaging design using minimal die-cuts and a restrictive high-end typographic palette.</p>", mediaHTML: "" }] },
-
   // ----------------------------------------------------
   // FOTOGRAFÍA
   // ----------------------------------------------------
@@ -362,12 +402,11 @@ const listaProyectos = [
   { id: "foto-3", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500", publicaciones: [{ idPub: "fot3-p1", año: "2024", titulo: "Retratos de Artistas", tags: ["Fotografía", "Lighting", "Portraits"], descripcionES: "<p>Sesiones de estudio personalizadas para músicos utilizando iluminación puntual indirecta para acentuar el carácter dramático de la pieza.</p>", descripcionEN: "<p>Custom studio sessions for musicians utilizing precise indirect lighting to enhance the dramatic character of the piece.</p>", mediaHTML: "" }] },
   { id: "foto-4", categoria: "fotografia", portadaImg: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500", publicaciones: [{ idPub: "foto-4-p1", año: "2026", titulo: "Espacios Vacíos", tags: ["Fotografía", "Industrial Decay", "Fine Arts"], descripcionES: "<p>Exploración estética sobre el deterioro institucional a través del registro analógico detallado de locaciones industriales en desuso.</p>", descripcionEN: "<p>Aesthetic exploration regarding institutional decay through detailed analog registry of defunct industrial locations.</p>", mediaHTML: "" }] }
 ];
-
 const textoBio = `
     <div class="bio-content-view" style="font-family: Google Sans, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
         <div class="bio-es" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #000;">
             <p style="margin-bottom: 16px;"><b style="font-weight: 500;">Wanda Acevedo</b> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
-            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
+            <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) and con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
         <div class="bio-en" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #777;">
             <p style="margin-bottom: 16px;"><b style="font-weight: 500;">Wanda Acevedo</b> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
@@ -375,47 +414,35 @@ const textoBio = `
         </div>
     </div>
 `;
-
 let categoriaActual = 'todos';
-
-// Variables globales para la lógica de carrusel en el Lightbox
 let imagenesLightboxActuales = [];
 let indiceLightboxActual = 0;
-
 function irAHome() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
     document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = '';
 }
-
 function mostrarInfo() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
     document.getElementById('back-button-container').classList.add('hidden');
     document.getElementById('dynamic-content').innerHTML = textoBio;
 }
-
 function renderizarGrillaProyectos(proyectosAVisualizar) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
-
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
     divGrilla.style.display = 'grid';
     divGrilla.style.width = '100%';
-
     proyectosAVisualizar.forEach(proy => {
         const primeraPub = proy.publicaciones[0];
         if (!primeraPub) return;
-
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
         tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
-
-        // Seteamos un reemplazo global para los b dentro del preview de las grillas
         let previewTexto = primeraPub.descripcionES.replaceAll('<b>', '<b style="font-weight: 500;">');
-
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${primeraPub.año}</div>
@@ -426,28 +453,22 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         `;
         divGrilla.appendChild(tarjeta);
     });
-
     contenedor.appendChild(divGrilla);
 }
-
 function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
-
     const divGrilla = document.createElement('div');
     divGrilla.className = 'grid-proyectos';
     divGrilla.style.display = 'grid';
     divGrilla.style.width = '100%';
-
     publicacionesFiltradas.forEach(item => {
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
         tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
-
         let previewTexto = item.pub.descripcionES.replaceAll('<b>', '<b style="font-weight: 500;">');
-
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${item.pub.año}</div>
@@ -458,31 +479,25 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
         `;
         divGrilla.appendChild(tarjeta);
     });
-
     contenedor.appendChild(divGrilla);
 }
-
 function verProyecto(idProyecto) {
     const proy = listaProyectos.find(p => p.id === idProyecto);
     if (!proy) return;
-
     document.getElementById('filtros-comerciales').classList.add('hidden');
     
     const botonVolver = document.getElementById('back-button-container');
     if (botonVolver) {
         botonVolver.classList.remove('hidden');
     }
-
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
-
     const divProyecto = document.createElement('div');
     divProyecto.className = 'proyecto-interno';
     divProyecto.style.width = '100%';
     divProyecto.style.maxWidth = '100%';
     
     let contenidoHTML = '';
-
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
         
@@ -496,8 +511,6 @@ function verProyecto(idProyecto) {
         } else if (mediaRenderizado && mediaRenderizado.includes('<img') && !mediaRenderizado.includes('display: grid')) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
-
-        // SOLUCIÓN NEGRITA: Forzamos font-weight: 500 sutil y limpio a todas las etiquetas <b> y <strong>
         let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #000; font-weight: 300;">');
         descES = descES.replaceAll('<b>', '<b style="font-weight: 500; color: #000;">');
         descES = descES.replaceAll('<strong>', '<strong style="font-weight: 500; color: #000;">');
@@ -505,7 +518,6 @@ function verProyecto(idProyecto) {
         let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
         descEN = descEN.replaceAll('<b>', '<b style="font-weight: 500; color: #555;">');
         descEN = descEN.replaceAll('<strong>', '<strong style="font-weight: 500; color: #555;">');
-
         contenidoHTML += `
             <div class="publicacion-item" style="margin-bottom: 50px; font-family: Google Sans, sans-serif; width: 100%;">
                 <div class="pub-ano" style="font-size: 18px; font-weight: 400; color: #999; margin-bottom: 4px;">${pub.año}</div>
@@ -523,17 +535,14 @@ function verProyecto(idProyecto) {
             </div>
         `;
     });
-
     divProyecto.innerHTML = contenidoHTML;
     contenedor.appendChild(divProyecto);
     window.scrollTo(0,0);
 }
-
 function volverALaGrilla() {
     document.getElementById('back-button-container').classList.add('hidden');
     filtrarCategoria(categoriaActual);
 }
-
 function filtrarCategoria(cat) {
     categoriaActual = cat;
     document.getElementById('back-button-container').classList.add('hidden');
@@ -543,15 +552,12 @@ function filtrarCategoria(cat) {
     } else {
         document.getElementById('filtros-comerciales').classList.add('hidden');
     }
-
     const filtrados = listaProyectos.filter(p => p.categoria === cat);
     renderizarGrillaProyectos(filtrados);
 }
-
 function filtrarPorMetadato(tagBuscado) {
     document.getElementById('back-button-container').classList.add('hidden');
     let publicacionesCoincidentes = [];
-
     listaProyectos.forEach(proy => {
         if (proy.categoria === 'comercial') {
             proy.publicaciones.forEach(pub => {
@@ -568,14 +574,11 @@ function filtrarPorMetadato(tagBuscado) {
     
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
-
-// LÓGICA DE LIGHTBOX CON SOPORTE DE NAVEGACIÓN ENTRE IMÁGENES
 document.addEventListener('click', function(event) {
     if (event.target.hasAttribute('data-lightbox') || event.target.closest('[data-lightbox]')) {
         const targetImg = event.target.tagName === 'IMG' ? event.target : event.target.querySelector('img');
         if (!targetImg) return;
         
-        // Buscamos todas las imágenes con data-lightbox activas en el contenedor actual para armar el set
         const todasLasImgs = Array.from(document.querySelectorAll('#dynamic-content img[data-lightbox="true"]'));
         imagenesLightboxActuales = todasLasImgs.map(img => img.getAttribute('src'));
         
@@ -585,7 +588,6 @@ document.addEventListener('click', function(event) {
             imagenesLightboxActuales = [urlImagen];
             indiceLightboxActual = 0;
         }
-
         const modal = document.getElementById('lightbox-modal');
         if (modal) {
             modal.classList.remove('hidden');
@@ -594,14 +596,11 @@ document.addEventListener('click', function(event) {
         }
     }
 });
-
 function actualizarImagenLightbox() {
     const imagenModal = document.getElementById('lightbox-img');
     if (imagenModal && imagenesLightboxActuales.length > 0) {
         imagenModal.src = imagenesLightboxActuales[indiceLightboxActual];
     }
-    
-    // Opcional: Ocultar o mostrar flechas si es una sola foto
     const btnPrev = document.getElementById('lightbox-prev-btn');
     const btnNext = document.getElementById('lightbox-next-btn');
     if (btnPrev && btnNext) {
@@ -614,59 +613,45 @@ function actualizarImagenLightbox() {
         }
     }
 }
-
 function inyectarFlechasNavegacion(modal) {
-    // Si ya existen las flechas creadas dinámicamente, no hacemos nada
     if (document.getElementById('lightbox-prev-btn')) return;
-
-    // Crear botón izquierdo
     const btnPrev = document.createElement('button');
     btnPrev.id = 'lightbox-prev-btn';
-    btnPrev.innerHTML = '&#8592;'; // Flecha izquierda uh unicode
-    btnPrev.style.cssText = 'position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ffffff; font-size: 35px; cursor: pointer; pading: 10px; z-index: 10010; transition: opacity 0.2s;';
+    btnPrev.innerHTML = '&#8592;';
+    btnPrev.style.cssText = 'position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ffffff; font-size: 35px; cursor: pointer; padding: 10px; z-index: 10010; transition: opacity 0.2s;';
     btnPrev.setAttribute('onclick', 'lightboxAnterior(event)');
     
-    // Crear botón derecho
     const btnNext = document.createElement('button');
     btnNext.id = 'lightbox-next-btn';
-    btnNext.innerHTML = '&#8594;'; // Flecha derecha unicode
+    btnNext.innerHTML = '&#8594;';
     btnNext.style.cssText = 'position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ffffff; font-size: 35px; cursor: pointer; padding: 10px; z-index: 10010; transition: opacity 0.2s;';
     btnNext.setAttribute('onclick', 'lightboxSiguiente(event)');
-
-    // Agregamos efectos hover básicos por script
     [btnPrev, btnNext].forEach(btn => {
         btn.onmouseover = () => btn.style.opacity = '0.7';
         btn.onmouseout = () => btn.style.opacity = '1';
     });
-
     modal.appendChild(btnPrev);
     modal.appendChild(btnNext);
     actualizarImagenLightbox();
 }
-
 function lightboxAnterior(event) {
-    if (event) event.stopPropagation(); // Evitamos que cierre el modal al hacer click en la flecha
+    if (event) event.stopPropagation();
     if (imagenesLightboxActuales.length <= 1) return;
-    
     indiceLightboxActual--;
     if (indiceLightboxActual < 0) {
-        indiceLightboxActual = imagenesLightboxActuales.length - 1; // Bucle infinito hacia atrás
+        indiceLightboxActual = imagenesLightboxActuales.length - 1;
     }
     actualizarImagenLightbox();
 }
-
 function lightboxSiguiente(event) {
-    if (event) event.stopPropagation(); // Evitamos que cierre el modal al hacer click en la flecha
+    if (event) event.stopPropagation();
     if (imagenesLightboxActuales.length <= 1) return;
-
     indiceLightboxActual++;
     if (indiceLightboxActual >= imagenesLightboxActuales.length) {
-        indiceLightboxActual = 0; // Bucle infinito hacia adelante
+        indiceLightboxActual = 0;
     }
     actualizarImagenLightbox();
 }
-
-// Soporte de navegación por teclado (Flechas izq/der y Escape)
 document.addEventListener('keydown', function(event) {
     const modal = document.getElementById('lightbox-modal');
     if (modal && !modal.classList.contains('hidden')) {
@@ -679,12 +664,10 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
-
 function cerrarImagen() {
     const modal = document.getElementById('lightbox-modal');
     if (modal) {
         modal.classList.add('hidden');
     }
 }
-
 irAHome();
