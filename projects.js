@@ -66,44 +66,90 @@ const listaProyectos = [
       }
     ]
   },
+
   // ----------------------------------------------------
-  // FREELANCE
+  // AUDIOVISUAL (REORDENADO Y ACTUALIZADO)
   // ----------------------------------------------------
   {
-    id: "free-lucuma",
-    categoria: "freelance",
-    portadaImg: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500",
+    id: "aud-memoria",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-memoria.png",
     publicaciones: [
       {
-        idPub: "luc-p1",
-        año: "2026",
-        titulo: "Lúcuma Medio Digital",
-        tags: ["Branding", "UX/UI", "Layout Design"],
-        descripcionES: "<p>Generación de identidad visual completa y plantillas editoriales fijas destinadas a la difusión de reseñas críticas y lanzamientos discográficos independientes.</p>",
-        descripcionEN: "<p>Complete visual identity generation and static editorial templates aimed at promoting critical reviews and independent album releases.</p>",
-        mediaHTML: '<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800">'
+        idPub: "aud-mem-p1",
+        año: "2023",
+        titulo: "memoria",
+        tags: ["Animación experimental"],
+        descripcionES: "<p>“memoria” es un proyecto de animación 2d resultado de una experimentación de diferentes técnicas audiovisuales: fotografía, imagen en movimiento, dibujos en papel y digitales. Fue realizado para la Universidad de Buenos Aires en el marco de los 40 años de Democracia en Argentina.</p>",
+        descripcionEN: "<p>“memoria” is a 2D animation project resulting from experimentation with various audiovisual techniques: photography, moving images, and both paper and digital drawings. It was produced for the University of Buenos Aires to mark 40 years of democracy in Argentina.</p>",
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/_fNHM4maVpA" title="memoria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
   },
-  { id: "free-2", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500", publicaciones: [{ idPub: "fr2-p1", año: "2024", titulo: "Indie Clip: Solitary Boy", tags: ["Short Form", "Color Grading", "Directing"], descripcionES: "<p>Registro audiovisual de campo y montaje rítmico final para el lanzamiento del videoclip oficial de la banda.</p>", descripcionEN: "<p>Audiovisual field recording and final rhythmic editing for the band's official music video launch.</p>", mediaHTML: "" }] },
-  { id: "free-3", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "fr3-p1", año: "2023", titulo: "Concierto Niceto Club", tags: ["Fotografía", "Concert Music", "Documentary"], descripcionES: "<p>Cobertura fotográfica documental en condiciones de iluminación complejas dentro del marco del festival de música emergente.</p>", descripcionEN: "<p>Documentary photographic coverage in complex lighting conditions within the framework of the emerging music festival.</p>", mediaHTML: "" }] },
-  { id: "free-4", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?w=500", publicaciones: [{ idPub: "fr4-p1", año: "2024", titulo: "Identidad Visual: AlmaSense", tags: ["UX/UI", "AI Tools", "Branding"], descripcionES: "<p>Optimización técnica de bibliotecas digitales y catalogación integral de assets automatizados asistidos por modelos de IA.</p>", descripcionEN: "<p>Technical optimization of digital libraries and comprehensive cataloging of automated assets assisted by AI models.</p>", mediaHTML: "" }] },
-  // ----------------------------------------------------
-  // AUDIOVISUAL
-  // ----------------------------------------------------
   {
-    id: "aud-universo-supermercado",
+    id: "aud-moyo",
     categoria: "audiovisual",
-    portadaImg: "img/portadas/portada-universo - supermercado.png",
+    portadaImg: "img/portadas/portada-moyo.png",
     publicaciones: [
       {
-        idPub: "aud-uni-p1",
-        año: "2020",
-        titulo: "universo - supermercado",
-        tags: ["animación", "experimental"],
-        descripcionES: "<p>Proyecto de animación y diseño experimental desarrollado en el marco de la materia Proyecto Audiovisual I de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>",
-        descripcionEN: "<p>Experimental animation and design project developed as part of the Audiovisual Project I course in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>",
-        mediaHTML: '<iframe src="https://www.youtube.com/embed/cDYyfddqidw" title="universo - supermercado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        idPub: "aud-moyo-p1",
+        año: "2023",
+        titulo: "Moyo",
+        tags: ["Cortos de animación 2D"],
+        descripcionES: `
+          <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 400; color: #000; margin-top: 25px; margin-bottom: 10px;">Proceso de construcción:</div>
+        `,
+        descripcionEN: `
+          <p>2D animation project blending paper-based drawing techniques with digital drawing.</p>
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #777; margin-top: 25px; margin-bottom: 10px;">Construction process:</div>
+        `,
+        mediaHTML: `
+          <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                  <iframe src="https://www.youtube.com/embed/1_h0tL3hrfA" title="Moyo Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+              </div>
+              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                  <iframe src="https://www.youtube.com/embed/e0nDvOtpPjM" title="Moyo Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; margin-top: 15px;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/-K0N8nFII5Y" title="Proceso 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/BC_WIf5bPTQ" title="Proceso 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/oUgn8nPFbTo" title="Proceso 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: "aud-cero-nueve",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-cero-nueve.png",
+    publicaciones: [
+      {
+        idPub: "aud-cero-p1",
+        año: "2023",
+        titulo: "cero, nueve",
+        tags: ["Video experimental"],
+        descripcionES: "<p>Interpretación audiovisual de un sueño.</p>",
+        descripcionEN: "<p>Audiovisual interpretation of a dream.</p>",
+        mediaHTML: `
+          <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000; margin-bottom: 25px;">
+              <iframe src="https://www.youtube.com/embed/jHQmMj2uQmo" title="cero, nueve" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/cero-nueve-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/cero-nueve-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/cero-nueve-03.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          </div>
+        `
       }
     ]
   },
@@ -153,7 +199,7 @@ const listaProyectos = [
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/la-grulla-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/la-grulla-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -185,7 +231,7 @@ const listaProyectos = [
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/okDMsnwzYII" title="Entre las Dos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/entre-las-dos-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -209,26 +255,26 @@ const listaProyectos = [
         titulo: "Urdimbre: Morfologías e identidad en el espacio público",
         tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
         descripcionES: `
-          <p>Urdimbre is una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
           <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
           <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
-          <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Exhibiciones</strong></p>
-          <p style="margin-bottom: 4px;">2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
+          <p><strong>Exhibiciones</strong></p>
+          <p>2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
           <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, España.</p>
         `,
         descripcionEN: `
           <p>Urdimbre is an interactive audiovisual installation developed throughout 2022 that explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
           <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
           <p>Project done in collaboration with Delfina Di Giacomo.</p>
-          <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Exhibitions</strong></p>
-          <p style="margin-bottom: 4px;">2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
+          <p><strong>Exhibitions</strong></p>
+          <p>2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
           <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, Spain.</p>
         `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/GC83fCLqHPs" title="Urdimbre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-family: Open Sauce, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
               <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
               <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
@@ -261,6 +307,30 @@ const listaProyectos = [
       }
     ]
   },
+
+  // ----------------------------------------------------
+  // FREELANCE
+  // ----------------------------------------------------
+  {
+    id: "free-lucuma",
+    categoria: "freelance",
+    portadaImg: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500",
+    publicaciones: [
+      {
+        idPub: "luc-p1",
+        año: "2026",
+        titulo: "Lúcuma Medio Digital",
+        tags: ["Branding", "UX/UI", "Layout Design"],
+        descripcionES: "<p>Generación de identidad visual completa y plantillas editoriales fijas destinadas a la difusión de reseñas críticas y lanzamientos discográficos independientes.</p>",
+        descripcionEN: "<p>Complete visual identity generation and static editorial templates aimed at promoting critical reviews and independent album releases.</p>",
+        mediaHTML: '<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800">'
+      }
+    ]
+  },
+  { id: "free-2", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500", publicaciones: [{ idPub: "fr2-p1", año: "2024", titulo: "Indie Clip: Solitary Boy", tags: ["Short Form", "Color Grading", "Directing"], descripcionES: "<p>Registro audiovisual de campo y montaje rítmico final para el lanzamiento del videoclip oficial de la banda.</p>", descripcionEN: "<p>Audiovisual field recording and final rhythmic editing for the band's official music video launch.</p>", mediaHTML: "" }] },
+  { id: "free-3", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "fr3-p1", año: "2023", titulo: "Concierto Niceto Club", tags: ["Fotografía", "Concert Music", "Documentary"], descripcionES: "<p>Cobertura fotográfica documental en condiciones de iluminación complejas dentro del marco del festival de música emergente.</p>", descripcionEN: "<p>Documentary photographic coverage in complex lighting conditions within the framework of the emerging music festival.</p>", mediaHTML: "" }] },
+  { id: "free-4", categoria: "freelance", portadaImg: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?w=500", publicaciones: [{ idPub: "fr4-p1", año: "2024", titulo: "Identidad Visual: AlmaSense", tags: ["UX/UI", "AI Tools", "Branding"], descripcionES: "<p>Optimización técnica de bibliotecas digitales y catalogación integral de assets automatizados asistidos por modelos de IA.</p>", descripcionEN: "<p>Technical optimization of digital libraries and comprehensive cataloging of automated assets assisted by AI models.</p>", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // INSTALACIONES
   // ----------------------------------------------------
@@ -283,6 +353,7 @@ const listaProyectos = [
   { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", mediaHTML: "" }] },
   { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
   { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // DISEÑO GRÁFICO
   // ----------------------------------------------------
@@ -290,6 +361,7 @@ const listaProyectos = [
   { id: "dis-2", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis2-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "<p>Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.</p>", descripcionEN: "<p>High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.</p>", mediaHTML: "" }] },
   { id: "dis-3", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis3-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "<p>Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.</p>", descripcionEN: "<p>Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.</p>", mediaHTML: "" }] },
   { id: "dis-4", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis4-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "<p>Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva de alta gama.</p>", descripcionEN: "<p>Structural sustainable packaging design using minimal die-cuts and a restrictive high-end typographic palette.</p>", mediaHTML: "" }] },
+
   // ----------------------------------------------------
   // FOTOGRAFÍA
   // ----------------------------------------------------
@@ -300,8 +372,8 @@ const listaProyectos = [
 ];
 
 const textoBio = `
-    <div class="bio-content-view" style="font-family: Open Sauce, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
-        <div class="bio-es" style="font-weight: 500; font-size: 15px; line-height: 1.6; color: #000;">
+    <div class="bio-content-view" style="font-family: Google Sans, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
+        <div class="bio-es" style="font-weight: 400; font-size: 15px; line-height: 1.6; color: #000;">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
             <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
@@ -342,14 +414,14 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${proy.id}')`);
-        tarjeta.style.fontFamily = 'Open Sauce, sans-serif';
+        tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
 
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}" style="width: 100%;">
-            <div class="pub-ano" style="font-family: Open Sauce, sans-serif;">${primeraPub.año}</div>
-            <h3 style="font-family: Open Sauce, sans-serif;">${primeraPub.titulo}</h3>
-            <div class="line-clamp-preview" style="font-family: Open Sauce, sans-serif; font-weight: 500;">
+            <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${primeraPub.año}</div>
+            <h3 style="font-family: Google Sans, sans-serif; font-size: 20px; margin-top: 4px; margin-bottom: 8px;">${primeraPub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 400; font-size: 14px;">
                 ${primeraPub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
@@ -372,14 +444,14 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
         const tarjeta = document.createElement('div');
         tarjeta.className = 'proyecto-tarjeta';
         tarjeta.setAttribute('onclick', `verProyecto('${item.padreId}')`);
-        tarjeta.style.fontFamily = 'Open Sauce, sans-serif';
+        tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
 
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}" style="width: 100%;">
-            <div class="pub-ano" style="font-family: Open Sauce, sans-serif;">${item.pub.año}</div>
-            <h3 style="font-family: Open Sauce, sans-serif;">${item.pub.titulo}</h3>
-            <div class="line-clamp-preview" style="font-family: Open Sauce, sans-serif; font-weight: 500;">
+            <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${item.pub.año}</div>
+            <h3 style="font-family: Google Sans, sans-serif; font-size: 20px; margin-top: 4px; margin-bottom: 8px;">${item.pub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 400; font-size: 14px;">
                 ${item.pub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
@@ -394,7 +466,7 @@ function verProyecto(idProyecto) {
     if (!proy) return;
 
     document.getElementById('filtros-comerciales').classList.add('hidden');
-    document.getElementById('back-button-container').classList.remove('hidden');
+    document.getElementById('back-button-container').removevalueOf ? document.getElementById('back-button-container').classList.remove('hidden') : null;
 
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -409,7 +481,7 @@ function verProyecto(idProyecto) {
     proy.publicaciones.forEach(pub => {
         let mediaRenderizado = pub.mediaHTML;
         
-        if (mediaRenderizado && mediaRenderizado.includes('<iframe') && !mediaRenderizado.includes('display: grid')) {
+        if (mediaRenderizado && mediaRenderizado.includes('<iframe') && !mediaRenderizado.includes('display: grid') && !mediaRenderizado.includes('display: flex')) {
             mediaRenderizado = mediaRenderizado.replace(/width="[^"]*"/, '').replace(/height="[^"]*"/, '');
             mediaRenderizado = `
                 <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
@@ -420,16 +492,18 @@ function verProyecto(idProyecto) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
-        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #000; font-weight: 500;">');
-        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin-bottom: 16px; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
+        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #000; font-weight: 400;">');
+        descES = descES.replaceAll('<strong>', '<strong style="font-size: 15px; color: #000; font-weight: 700;">');
+        
+        let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
+        descEN = descEN.replaceAll('<strong>', '<strong style="font-size: 15px; color: #777; font-weight: 700;">');
 
         contenidoHTML += `
-            <div class="publicacion-item" style="margin-bottom: 50px; font-family: Open Sauce, sans-serif; width: 100%;">
-                <div class="pub-ano" style="font-size: 18px; font-weight: 500; color: #999; margin-bottom: 4px;">${pub.año}</div>
+            <div class="publicacion-item" style="margin-bottom: 50px; font-family: Google Sans, sans-serif; width: 100%;">
+                <div class="pub-ano" style="font-size: 18px; font-weight: 400; color: #999; margin-bottom: 4px;">${pub.año}</div>
                 <div class="pub-titulo-interno" style="font-size: 32px; font-weight: 700; color: #000; margin-bottom: 8px; line-height: 1.2;">${pub.titulo}</div>
-                <div class="pub-tags" style="font-size: 16px; color: #76C4AA; font-weight: 500; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
+                <div class="pub-tags" style="font-size: 16px; color: #76C4AA; font-weight: 400; margin-bottom: 35px; letter-spacing: 0.5px;">${pub.tags.join(' - ')}</div>
                 
-                <!-- Estructura de Dos Columnas para los Idiomas -->
                 <div class="idiomas-columnas-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%; margin-bottom: 35px;">
                     <div class="descripcion-bloque-es">${descES}</div>
                     <div class="descripcion-bloque-en">${descEN}</div>
