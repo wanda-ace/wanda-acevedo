@@ -1,14 +1,14 @@
 const listaProyectos = [
-  // ====================================================
-  // TRABAJO -> MARCAS
-  // ====================================================
+  // ----------------------------------------------------
+  // MARCAS / COMERCIAL
+  // ----------------------------------------------------
   {
-    id: "trab-marcas-brkv",
-    categoria: "marcas",
+    id: "com-brkv",
+    categoria: "comercial",
     portadaImg: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500",
     publicaciones: [
       {
-        idPub: "mar-brkv-p1",
+        idPub: "brkv-p1",
         año: "2025",
         titulo: "BRKV Co-Living Platform",
         tags: ["Branding", "UX/UI", "AI Tools"],
@@ -19,12 +19,12 @@ const listaProyectos = [
     ]
   },
   {
-    id: "trab-marcas-techround",
-    categoria: "marcas",
+    id: "com-techround",
+    categoria: "comercial",
     portadaImg: "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500",
     publicaciones: [
       {
-        idPub: "mar-tech-p1",
+        idPub: "tech-p1",
         año: "2025",
         titulo: "TechRound UK Video Editorial",
         tags: ["Short Form", "Motion Graphics", "AI Tools"],
@@ -35,12 +35,12 @@ const listaProyectos = [
     ]
   },
   {
-    id: "trab-marcas-cosecha",
-    categoria: "marcas",
+    id: "com-cosecha",
+    categoria: "comercial",
     portadaImg: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=500",
     publicaciones: [
       {
-        idPub: "mar-cos-p1",
+        idPub: "cos-p1",
         año: "2025",
         titulo: "La Cosecha - Hotelería Digital",
         tags: ["Short Form", "Branding", "Color Grading"],
@@ -51,12 +51,12 @@ const listaProyectos = [
     ]
   },
   {
-    id: "trab-marcas-flakka-promo",
-    categoria: "marcas",
+    id: "com-flakka",
+    categoria: "comercial",
     portadaImg: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500",
     publicaciones: [
       {
-        idPub: "mar-flak-promo-p1",
+        idPub: "flak-p1",
         año: "2024",
         titulo: "Flakkaboem Live Sessions",
         tags: ["Motion Graphics", "Short Form", "Color Grading"],
@@ -67,73 +67,11 @@ const listaProyectos = [
     ]
   },
 
-  // ====================================================
-  // TRABAJO -> FREELANCE
-  // ====================================================
+  // ----------------------------------------------------
+  // AUDIOVISUAL
+  // ----------------------------------------------------
   {
-    id: "trab-free-flakkaboem-sessions",
-    categoria: "freelance",
-    portadaImg: "img/portadas/portada-flakkaboem.jpg",
-    publicaciones: [
-      {
-        idPub: "free-flak-p1",
-        año: "2024",
-        titulo: "Flakkaboem Sessions",
-        tags: ["live music sessions"],
-        descripcionES: "<p>Postproducción de material audiovisual para sesiones de música en vivo, incluyendo <b>edición de video</b>, <b>corrección de color</b>, <b>sincronización multicámara</b> y selección de fragmentos para la creación de contenido en formato vertical destinado a Instagram Reels y YouTube Shorts.</p>",
-        descripcionEN: "<p>Post-production of audiovisual content for live music sessions, including <b>video editing</b>, <b>color correction</b>, <b>multicamera synchronization</b>, and the selection of highlights for short-form vertical content on Instagram Reels and YouTube Shorts.</p>",
-        mediaHTML: `
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%;">
-              <!-- Bloque 1 -->
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.youtube.com/embed/S5clh2xefZw" title="Flakkaboem YouTube 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.instagram.com/reel/C--qANCoZuu/embed" title="Flakkaboem Instagram 1" frameborder="0" allowtransparency="true" allow="encrypted-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-
-              <!-- Bloque 2 -->
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.youtube.com/embed/KIdcWdvYjyI" title="Flakkaboem YouTube 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.instagram.com/reel/C9m0jSiofec/embed" title="Flakkaboem Instagram 2" frameborder="0" allowtransparency="true" allow="encrypted-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-
-              <!-- Bloque 3 -->
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.youtube.com/embed/4ShSn0kQJeE" title="Flakkaboem YouTube 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.instagram.com/reel/C6wLgRnIE0y/embed" title="Flakkaboem Instagram 3" frameborder="0" allowtransparency="true" allow="encrypted-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-
-              <!-- Bloque 4 -->
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.youtube.com/embed/WMMbMiQEcWA" title="Flakkaboem YouTube 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.instagram.com/reel/C5EKt3_oolW/embed" title="Flakkaboem Instagram 4" frameborder="0" allowtransparency="true" allow="encrypted-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-
-              <!-- Bloque 5 -->
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.youtube.com/embed/EA6wyKV7xs4" title="Flakkaboem YouTube 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-              <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-                  <iframe src="https://www.instagram.com/reel/C3-b801Ivpj/embed" title="Flakkaboem Instagram 5" frameborder="0" allowtransparency="true" allow="encrypted-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-              </div>
-          </div>
-        `
-      }
-    ]
-  },
-
-  // ====================================================
-  // PROYECTOS -> AUDIOVISUAL
-  // ====================================================
-  {
-    id: "proy-aud-memoria",
+    id: "aud-memoria",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-memoria.png",
     publicaciones: [
@@ -149,14 +87,14 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-moyo",
+    id: "aud-moyo",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-moyo.png",
     publicaciones: [
       {
         idPub: "aud-moyo-p1",
         año: "2023",
-        titulo: "moyo",
+        titulo: "Moyo",
         tags: ["cortos de animación 2D"],
         descripcionES: `
           <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
@@ -191,7 +129,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-cero-nueve",
+    id: "aud-cero-nueve",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-cero-nueve.png",
     publicaciones: [
@@ -216,7 +154,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-urdimbre",
+    id: "aud-urdimbre-morfologias",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-urdimbre.png",
     publicaciones: [
@@ -253,7 +191,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-entre-las-dos",
+    id: "aud-entre-las-dos",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-entre-las-dos.png",
     publicaciones: [
@@ -286,7 +224,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-la-grulla",
+    id: "aud-la-grulla",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-la grulla.png",
     publicaciones: [
@@ -318,7 +256,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-albores",
+    id: "aud-albores",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-albores.png",
     publicaciones: [
@@ -338,7 +276,7 @@ const listaProyectos = [
     ]
   },
   {
-    id: "proy-aud-azar",
+    id: "aud-documental-del-azar",
     categoria: "audiovisual",
     portadaImg: "img/portadas/portada-documentaldelazar.png",
     publicaciones: [
@@ -349,7 +287,7 @@ const listaProyectos = [
         tags: ["mixed-media"],
         descripcionES: `
           <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual 1 (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
-          <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representation y la experimentación visual.</p>
+          <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representación y la experimentación visual.</p>
           <p>Realizado en colaboración con Javiera Ceniceros y Clara Bunge.</p>
         `,
         descripcionEN: `
@@ -362,16 +300,84 @@ const listaProyectos = [
     ]
   },
 
-  // ====================================================
-  // PROYECTOS -> INSTALACIONES
-  // ====================================================
+  // ----------------------------------------------------
+  // FREELANCE
+  // ----------------------------------------------------
   {
-    id: "proy-inst-bajo-sur",
+    id: "free-flakkaboem-sessions",
+    categoria: "freelance",
+    portadaImg: "img/portadas/portada-cero-nueve.png",
+    publicaciones: [
+      {
+        idPub: "free-flak-p1",
+        año: "2024",
+        titulo: "Flakkaboem Sessions",
+        tags: ["live music sessions"],
+        descripcionES: "<p>Postproducción de material audiovisual para sesiones de música en vivo, incluyendo <b>edición de video</b>, <b>corrección de color</b>, <b>sincronización multicámara</b> y selección de fragmentos para la creación de contenido en formato vertical destinado a Instagram Reels y YouTube Shorts.</p>",
+        descripcionEN: "<p>Post-production of audiovisual content for live music sessions, including <b>video editing</b>, <b>color correction</b>, <b>multicamera synchronization</b>, and the selection of highlights for short-form vertical content on Instagram Reels and YouTube Shorts.</p>",
+        mediaHTML: `
+          <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+              <!-- Fila 1: Videos 1 -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/S5clh2xefZw" title="Flakkaboem Session 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C--qANCoZuu/embed" title="Flakkaboem Reel 1" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 2: Videos 2 -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/KIdcWdvYJI" title="Flakkaboem Session 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C9m0jSiofec/embed" title="Flakkaboem Reel 2" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 3: Videos 3 -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/4ShSn0kQJeE" title="Flakkaboem Session 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C6wLgRnIE0y/embed" title="Flakkaboem Reel 3" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 4: Videos 4 -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/WMMbMiQEcWA" title="Flakkaboem Session 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C5EKt3_oolW/embed" title="Flakkaboem Reel 4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+              <!-- Fila 5: Videos 5 -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.youtube.com/embed/EA6wyKV7xs4" title="Flakkaboem Session 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+                  <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
+                      <iframe src="https://www.instagram.com/reel/C3-b801Ivpj/embed" title="Flakkaboem Reel 5" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                  </div>
+              </div>
+          </div>
+        `
+      }
+    ]
+  },
+
+  // ----------------------------------------------------
+  // INSTALACIONES
+  // ----------------------------------------------------
+  {
+    id: "inst-bajo-sur",
     categoria: "instalaciones",
     portadaImg: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500",
     publicaciones: [
       {
-        idPub: "inst-bajo-p1",
+        idPub: "inst1-p1",
         año: "2025",
         titulo: "Bajo Sur - Instalación",
         tags: ["Instalación", "Nuevas Tecnologías", "Fine Arts"],
@@ -381,72 +387,15 @@ const listaProyectos = [
       }
     ]
   },
-  { 
-    id: "proy-inst-urdimbre-madrid", 
-    categoria: "instalaciones", 
-    portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", 
-    publicaciones: [
-      { 
-        idPub: "inst-urd-p1", 
-        año: "2024", 
-        titulo: "Urdimbre - Madrid", 
-        tags: ["Instalación", "Vector Art", "Textiles"], 
-        descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", 
-        descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", 
-        mediaHTML: "" 
-      }
-    ] 
-  },
-  { 
-    id: "proy-inst-frecuencias", 
-    categoria: "instalaciones", 
-    portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", 
-    publicaciones: [
-      { 
-        idPub: "inst-frec-p1", 
-        año: "2025", 
-        titulo: "Frecuencias Latentes", 
-        tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], 
-        descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", 
-        descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", 
-        mediaHTML: "" 
-      }
-    ] 
-  },
-  { 
-    id: "proy-inst-humedades", 
-    categoria: "instalaciones", 
-    portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", 
-    publicaciones: [
-      { 
-        idPub: "inst-hum-p1", 
-        año: "2026", 
-        titulo: "Humedades Digitales", 
-        tags: ["Instalación", "Generative Art", "Algorithms"], 
-        descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", 
-        descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", 
-        mediaHTML: "" 
-      }
-    ] 
-  },
+  { id: "inst-2", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500", publicaciones: [{ idPub: "inst2-p1", año: "2024", titulo: "Urdimbre - Madrid", tags: ["Instalación", "Vector Art", "Textiles"], descripcionES: "<p>Exhibición interactiva en la muestra colectiva que cruza texturas analógicas pesadas con proyecciones vectoriales de código vivo.</p>", descripcionEN: "<p>Interactive exhibition in the collective showcase that crosses heavy analog textures with live-coded vector projections.</p>", mediaHTML: "" }] },
+  { id: "inst-3", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500", publicaciones: [{ idPub: "inst3-p1", año: "2025", titulo: "Frecuencias Latentes", tags: ["Nuevas Tecnologías", "Granular Sound", "Immersive"], descripcionES: "<p>Performance espacial de carácter interactivo que utiliza síntesis granular manipulada mediante sensores de movimiento corporales.</p>", descripcionEN: "<p>Interactive spatial performance using granular synthesis manipulated through body motion sensors.</p>", mediaHTML: "" }] },
+  { id: "inst-4", categoria: "instalaciones", portadaImg: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500", publicaciones: [{ idPub: "inst4-p1", año: "2026", titulo: "Humedades Digitales", tags: ["Instalación", "Generative Art", "Algorithms"], descripcionES: "<p>Instalación de arte generativo basada estrictamente en algoritmos biológicos simulados que mutan según la temperatura ambiente de la sala.</p>", descripcionEN: "<p>Generative art installation strictly based on simulated biological algorithms that mutate according to the room's ambient temperature.</p>", mediaHTML: "" }] },
 
-  // ====================================================
-  // PROYECTOS -> DISEÑO GRÁFICO
-  // ====================================================
-  { 
-    id: "proy-dis-residencial", 
-    categoria: "diseno grafico", 
-    portadaImg: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=500", 
-    publicaciones: [
-      { 
-        idPub: "dis-res-p1", 
-        año: "2025", 
-        titulo: "Branding Residential", 
-        tags: ["Branding", "Typography", "Editorial Layout"], 
-        descripcionES: "<p>Desarrollo de identidad de marca premium y sistemas tipográficos limpios orientados al sector de desarrollos residenciales.</p>", 
-        descripcionEN: "<p>Premium brand identity development and clean typographic systems tailored for the residential development sector.</p>", 
-        mediaHTML: '<img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800">' 
-      }
-    ] 
-  }
+  // ----------------------------------------------------
+  // DISEÑO GRÁFICO
+  // ----------------------------------------------------
+  { id: "dis-1", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=500", publicaciones: [{ idPub: "dis1-p1", año: "2025", titulo: "Branding Residencial", tags: ["Branding", "Typography", "Editorial Layout"], descripcionES: "<p>Desarrollo de identidad de marca premium y sistemas tipográficos limpios orientados al sector de desarrollos inmobiliarios de lujo.</p>", descripcionEN: "<p>Premium brand identity development and clean typographic systems tailored for the luxury real estate development sector.</p>", mediaHTML: "" }] },
+  { id: "dis-2", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=500", publicaciones: [{ idPub: "dis2-p1", año: "2025", titulo: "UI/UX Camping App", tags: ["UX/UI", "Figma Design", "Prototyping"], descripcionES: "<p>Prototipado interactivo de alta fidelidad y desarrollo detallado del sistema de componentes responsivos para aplicaciones móviles de turismo aventura.</p>", descripcionEN: "<p>High-fidelity interactive prototyping and detailed development of the responsive component system for adventure tourism mobile applications.</p>", mediaHTML: "" }] },
+  { id: "dis-3", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500", publicaciones: [{ idPub: "dis3-p1", año: "2025", titulo: "AdeaHealth Interface", tags: ["UX/UI", "Product Design", "Healthcare"], descripcionES: "<p>Rediseño de flujos funcionales y optimización de interfaces críticas para sistemas globales de historias clínicas digitales.</p>", descripcionEN: "<p>Redesign of functional flows and optimization of critical interfaces for global digital medical record systems.</p>", mediaHTML: "" }] },
+  { id: "dis-4", categoria: "diseno", portadaImg: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500", publicaciones: [{ idPub: "dis4-p1", año: "2025", titulo: "Packaging La Cosecha", tags: ["Branding", "Sustainability", "Die-cuts"], descripcionES: "<p>Diseño estructural de empaques sustentables utilizando troqueles mínimos y una paleta tipográfica restrictiva.</p>", descripcionEN: "<p>Sustainable structural packaging design using minimal die-cuts and a restrictive typographic palette.</p>", mediaHTML: "" }] }
 ];
