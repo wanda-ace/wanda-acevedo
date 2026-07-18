@@ -68,7 +68,7 @@ const listaProyectos = [
   },
 
   // ----------------------------------------------------
-  // AUDIOVISUAL (REORDENADO Y ACTUALIZADO)
+  // AUDIOVISUAL
   // ----------------------------------------------------
   {
     id: "aud-memoria",
@@ -98,7 +98,7 @@ const listaProyectos = [
         tags: ["Cortos de animación 2D"],
         descripcionES: `
           <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
-          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 400; color: #000; margin-top: 25px; margin-bottom: 10px;">Proceso de construcción:</div>
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #000; margin-top: 25px; margin-bottom: 10px;">Proceso de construcción:</div>
         `,
         descripcionEN: `
           <p>2D animation project blending paper-based drawing techniques with digital drawing.</p>
@@ -154,56 +154,39 @@ const listaProyectos = [
     ]
   },
   {
-    id: "aud-documental-del-azar",
+    id: "aud-urdimbre-morfologias",
     categoria: "audiovisual",
-    portadaImg: "img/portadas/portada-documentaldelazar.png",
+    portadaImg: "img/portadas/portada-urdimbre.png",
     publicaciones: [
       {
-        idPub: "aud-azar-p1",
-        año: "2020",
-        titulo: "Documental del azar",
-        tags: ["documental", "mixed-media", "animación", "experimental"],
-        descripcionES: `
-          <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual I (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
-          <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representación y la experimentación visual.</p>
-          <p>Realizado en colaboración con Javiera Ceniceros y Clara Bunge.</p>
-        `,
-        descripcionEN: `
-          <p>"Documental del azar" is an experimental video created as the final project for the Audiovisual Project I course (Campos/Trilnick Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
-          <p>The project explores the intersection of documentary filmmaking and visual experimentation by combining documentary footage with hand-crafted interventions applied directly to individual frames, blurring the boundaries between documentation and artistic expression.</p>
-          <p>Created in collaboration with Javiera Ceniceros and Clara Bunge.</p>
-        `,
-        mediaHTML: '<iframe src="https://www.youtube.com/embed/FKYOi1UyxpY" title="Documental del azar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-      }
-    ]
-  },
-  {
-    id: "aud-la-grulla",
-    categoria: "audiovisual",
-    portadaImg: "img/portadas/portada-la grulla.png",
-    publicaciones: [
-      {
-        idPub: "aud-grulla-p1",
+        idPub: "aud-urdimbre-p1",
         año: "2022",
-        titulo: "La Grulla",
-        tags: ["documental", "cámara", "iluminación", "dirección"],
+        titulo: "Urdimbre: Morfologías e identidad en el espacio público",
+        tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
         descripcionES: `
-          <p>La Grulla es mi abuela. Desde la productora Doña Mutante realizamos este proyecto con el objetivo de construir un retrato íntimo de su espiritualidad y su templanza en el contexto de una ciudad sonora, invasiva y constantemente agitada.</p>
-          <p>Más que presentar ese entorno como un conflicto o una fuente de incomodidad, el retrato pone el foco en la manera en que ella habita ese espacio a través de sus rituales cotidianos.</p>
+          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
+          <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
+          <p><strong>Exhibiciones</strong></p>
+          <p>2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
+          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, España.</p>
         `,
         descripcionEN: `
-          <p>La Grulla is my grandmother. Produced by Doña Mutante, this project aims to create an intimate portrait of her spirituality and inner strength within the context of a noisy, intrusive, and constantly bustling city.</p>
-          <p>Rather than portraying this environment as a source of conflict or discomfort, the portrait focuses on the way she inhabits it through her daily rituals, revealing a quiet coexistence between her inner world and the city's relentless rhythm.</p>
+          <p>Urdimbre is an interactive audiovisual installation developed throughout 2022 that explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
+          <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
+          <p>Project done in collaboration with Delfina Di Giacomo.</p>
+          <p><strong>Exhibitions</strong></p>
+          <p>2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
+          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, Spain.</p>
         `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-              <iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+              <iframe src="https://www.youtube.com/embed/GC83fCLqHPs" title="Urdimbre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
-              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
-              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
-              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-03.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
           </div>
         `
       }
@@ -245,39 +228,32 @@ const listaProyectos = [
     ]
   },
   {
-    id: "aud-urdimbre-morfologias",
+    id: "aud-la-grulla",
     categoria: "audiovisual",
-    portadaImg: "img/portadas/portada-urdimbre.png",
+    portadaImg: "img/portadas/portada-la grulla.png",
     publicaciones: [
       {
-        idPub: "aud-urdimbre-p1",
+        idPub: "aud-grulla-p1",
         año: "2022",
-        titulo: "Urdimbre: Morfologías e identidad en el espacio público",
-        tags: ["obra audiovisual", "instalación interactiva", "espacio urbano"],
+        titulo: "La Grulla",
+        tags: ["documental", "cámara", "iluminación", "dirección"],
         descripcionES: `
-          <p>Urdimbre es una obra audiovisual e instalativa interactiva desarrollada durante 2022 que explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
-          <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
-          <p>El proyecto fue realizado en conjunto con Delfina Di Giacomo.</p>
-          <p><strong>Exhibiciones</strong></p>
-          <p>2022 – Muestra Magma, Centro Hipermediático Experimental Latinoamericano (CHELA), Buenos Aires, Argentina.</p>
-          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, España.</p>
+          <p>La Grulla es mi abuela. Desde la productora Doña Mutante realizamos este proyecto con el objetivo de construir un retrato íntimo de su espiritualidad y su templanza en el contexto de una ciudad sonora, invasiva y constantemente agitada.</p>
+          <p>Más que presentar ese entorno como un conflicto o una fuente de incomodidad, el retrato pone el foco en la manera en que ella habita ese espacio a través de sus rituales cotidianos.</p>
         `,
         descripcionEN: `
-          <p>Urdimbre is an interactive audiovisual installation developed throughout 2022 that explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
-          <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
-          <p>Project done in collaboration with Delfina Di Giacomo.</p>
-          <p><strong>Exhibitions</strong></p>
-          <p>2022 – Magma Exhibition, Latin American Experimental Hypermedia Center (CHELA), Buenos Aires, Argentina.</p>
-          <p>2024 – Pensar la Ciudad, The Sibarist, Madrid, Spain.</p>
+          <p>La Grulla is my grandmother. Produced by Doña Mutante, this project aims to create an intimate portrait of her spirituality and inner strength within the context of a noisy, intrusive, and constantly bustling city.</p>
+          <p>Rather than portraying this environment as a source of conflict or discomfort, the portrait focuses on the way she inhabits it through her daily rituals, revealing a quiet coexistence between her inner world and the city's relentless rhythm.</p>
         `,
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
-              <iframe src="https://www.youtube.com/embed/GC83fCLqHPs" title="Urdimbre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+              <iframe src="https://www.youtube.com/embed/ey6VMglwguY" title="La Grulla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
           </div>
-          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Imágenes:</div>
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%;">
-              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
-              <img data-lightbox="true" src="img/proyectos-internos/urdimbre-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+          <div style="font-family: Google Sans, sans-serif; font-size: 20px; font-weight: 700; color: #000; margin-top: 40px; margin-bottom: 15px;">Backstage:</div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-01.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-02.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
+              <img data-lightbox="true" src="img/proyectos-internos/la-grulla-03.png" style="width: 100%; height: auto; object-fit: cover; cursor: pointer; border-radius: 4px;">
           </div>
         `
       }
@@ -299,11 +275,35 @@ const listaProyectos = [
           <p>El proyecto fue realizado junto a Delfina Di Giacomo, Inés Emery, Clara Rapela y Luna Ciravegna, quienes formaron parte del equipo creativo y de producción.</p>
         `,
         descripcionEN: `
-          <p>I worked as the director, editor, and sound designer of Albores, a docufiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
+          <p>I worked as the director, editor, and sound designer of Albores, a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
           <p>The film follows Juan, a student at an agricultural high school who feels increasingly constrained by the religious environment surrounding him. As he goes through what seems to be an ordinary school day, he is ultimately confronted with a decision that will shape his future.</p>
           <p>The project was developed in collaboration with Delfina Di Giacomo, Inés Emery, Clara Rapela, and Luna Ciravegna, who were part of the film's creative and production team.</p>
         `,
         mediaHTML: '<iframe src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+      }
+    ]
+  },
+  {
+    id: "aud-documental-del-azar",
+    categoria: "audiovisual",
+    portadaImg: "img/portadas/portada-documentaldelazar.png",
+    publicaciones: [
+      {
+        idPub: "aud-azar-p1",
+        año: "2020",
+        titulo: "Documental del azar",
+        tags: ["documental", "mixed-media", "animación", "experimental"],
+        descripcionES: `
+          <p>"Documental del azar" es un video experimental realizado como proyecto final de la materia Proyecto Audiovisual I (Cátedra Campos/Trilnick) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA).</p>
+          <p>El proyecto explora el cruce entre el registro documental y la intervención plástica, combinando imágenes documentales con manipulaciones realizadas directamente sobre los fotogramas para cuestionar los límites entre la representación y la experimentación visual.</p>
+          <p>Realizado en colaboración con Javiera Ceniceros y Clara Bunge.</p>
+        `,
+        descripcionEN: `
+          <p>"Documental del azar" is an experimental video created as the final project for the Audiovisual Project I course (Campos/Trilnick Studio) in the Image and Sound Design program at the University of Buenos Aires (UBA).</p>
+          <p>The project explores the intersection of documentary filmmaking and visual experimentation by combining documentary footage with hand-crafted interventions applied directly to individual frames, blurring the boundaries between documentation and artistic expression.</p>
+          <p>Created in collaboration with Javiera Ceniceros and Clara Bunge.</p>
+        `,
+        mediaHTML: '<iframe src="https://www.youtube.com/embed/FKYOi1UyxpY" title="Documental del azar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
   },
@@ -373,7 +373,7 @@ const listaProyectos = [
 
 const textoBio = `
     <div class="bio-content-view" style="font-family: Google Sans, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
-        <div class="bio-es" style="font-weight: 400; font-size: 15px; line-height: 1.6; color: #000;">
+        <div class="bio-es" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #000;">
             <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
             <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
@@ -420,8 +420,8 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${primeraPub.año}</div>
-            <h3 style="font-family: Google Sans, sans-serif; font-size: 20px; margin-top: 4px; margin-bottom: 8px;">${primeraPub.titulo}</h3>
-            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 400; font-size: 14px;">
+            <h3 style="font-family: Google Sans, sans-serif; font-size: 17px; margin-top: 4px; margin-bottom: 8px;">${primeraPub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 300; font-size: 14px;">
                 ${primeraPub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
@@ -450,8 +450,8 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${item.pub.año}</div>
-            <h3 style="font-family: Google Sans, sans-serif; font-size: 20px; margin-top: 4px; margin-bottom: 8px;">${item.pub.titulo}</h3>
-            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 400; font-size: 14px;">
+            <h3 style="font-family: Google Sans, sans-serif; font-size: 17px; margin-top: 4px; margin-bottom: 8px;">${item.pub.titulo}</h3>
+            <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 300; font-size: 14px;">
                 ${item.pub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
@@ -466,7 +466,11 @@ function verProyecto(idProyecto) {
     if (!proy) return;
 
     document.getElementById('filtros-comerciales').classList.add('hidden');
-    document.getElementById('back-button-container').removevalueOf ? document.getElementById('back-button-container').classList.remove('hidden') : null;
+    
+    const botonVolver = document.getElementById('back-button-container');
+    if (botonVolver) {
+        botonVolver.classList.remove('hidden');
+    }
 
     const contenedor = document.getElementById('dynamic-content');
     contenedor.innerHTML = '';
@@ -492,7 +496,7 @@ function verProyecto(idProyecto) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
-        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #000; font-weight: 400;">');
+        let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #000; font-weight: 300;">');
         descES = descES.replaceAll('<strong>', '<strong style="font-size: 15px; color: #000; font-weight: 700;">');
         
         let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
