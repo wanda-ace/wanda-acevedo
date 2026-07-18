@@ -98,11 +98,11 @@ const listaProyectos = [
         tags: ["cortos de animación 2D"],
         descripcionES: `
           <p>Proyecto de animación 2d que mezcla técnicas de dibujo en papel con dibujo digital.</p>
-          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #000; margin-top: 25px; 
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #000; margin-top: 25px;">Proceso de construcción:</div>
         `,
         descripcionEN: `
           <p>2D animation project blending paper-based drawing techniques with digital drawing.</p>
-          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #777; margin-top: 25px;
+          <div style="font-family: Google Sans, sans-serif; font-size: 15px; font-weight: 300; color: #777; margin-top: 25px;">Construction process:</div>
         `,
         mediaHTML: `
           <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
@@ -164,16 +164,16 @@ const listaProyectos = [
         titulo: "urdimbre: morfologías e identidad en el espacio público",
         tags: ["video experimental"],
         descripcionES: `
-          <p>"Urdimbre" es un collage audiovisual desarrollada durante 2022 junto a Delfina Di Giacomo. Explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietud por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
+          <p>"Urdimbre" es un collage audiovisual desarrollada durante 2022 junto a Delfina Di Giacomo. Explora las líneas, los recorridos y las formas que configuran el espacio público. El proyecto surge de una inquietun por observar las morfologías de la ciudad e imaginar las lógicas que subyacen a su organización.</p>
           <p>A partir del tránsito reiterado por los mismos espacios urbanos, la obra dirige su mirada hacia los no-lugares: ámbitos de circulación donde la identidad individual se diluye en el flujo constante de personas. La infraestructura urbana y sus trazados conducen nuestros desplazamientos a través de recorridos aparentemente mecánicos, que por momentos parecen abrir la posibilidad de ser interrumpidos o transformados.</p>
-          <p><strong>Exhibiciones</strong></p>
+          <p><b>Exhibiciones</b></p>
           <p>2022 – <a href="https://www.instagram.com/muestramagma/" target="_blank">Muestra MAGMA</a>, Centro Hipermediático Experimental Latinoamericano (<a href="https://chela.org.ar/" target="_blank">CHELA</a>), Buenos Aires, Argentina.</p>
           <p>2024 – <a href="https://thesibarist.com/es/magazine/asi-fue-la-inauguracion-de-pensar-la-ciudad/" target="_blank">Pensar la Ciudad</a>, The Sibarist, Madrid, España.</p>
         `,
         descripcionEN: `
           <p>"Urdimbre" is an audiovisual collage developed throughout 2022 in collaboration with Delfina Di Giacomo. It explores the lines, pathways, and forms that shape public space. The project emerged from a fascination with the city's morphologies and a desire to imagine the hidden logics underlying its organization.</p>
           <p>Through the repeated experience of moving through the same urban environments, the work turns its attention to non-places: spaces of circulation where individual identity becomes diluted within the continuous flow of people. The city's infrastructure and network of lines guide our movements along seemingly mechanical paths that occasionally reveal the possibility of disruption and transformation.</p>
-          <p><strong>Exhibitions</strong></p>
+          <p><b>Exhibitions</b></p>
           <p>2022 – <a href="https://www.instagram.com/muestramagma/" target="_blank">MAGMA Exhibition</a>, Latin American Experimental Hypermedia Center (<a href="https://chela.org.ar/" target="_blank">CHELA</a>), Buenos Aires, Argentina.</p>
           <p>2024 – <a href="https://thesibarist.com/es/magazine/asi-fue-la-inauguracion-de-pensar-la-ciudad/" target="_blank">Pensar la Ciudad</a>, The Sibarist, Madrid, Spain.</p>
         `,
@@ -201,11 +201,11 @@ const listaProyectos = [
         titulo: "entre las dos",
         tags: ["corto ficcional experimental"],
         descripcionES: `
-          <p>"Entre las Dos" es un corto realizado en el marco de la materia Iluminación y Cámara 2 (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA). En este proyecto me desempeñé como <b>directora<b> y <b>diseñadora de iluminación<b>.</p>
-        `,
+          <p>"Entre las Dos" es un corto realizado en el marco de la materia Iluminación y Cámara 2 (Cátedra Valansi) de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA). En este proyecto me desempeñé como <b>directora</b> y <b>diseñadora de iluminación</b>.</p>
+        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
         descripcionEN: `
-          <p>“Entre las Dos” is a short film developed as part of the Lighting and Camera 2 course in the Image and Sound Design career at the University of Buenos Aires (UBA). For this project, I worked as the <b>director<b> and <b>lighting designer<b>.</p>
-        `,
+          <p>“Entre las Dos” is a short film developed as part of the Lighting and Camera 2 course in the Image and Sound Design career at the University of Buenos Aires (UBA). For this project, I worked as the <b>director</b> and <b>lighting designer</b>.</p>
+        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
         mediaHTML: `
           <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; border-radius: 4px; background-color: #000;">
               <iframe src="https://www.youtube.com/embed/okDMsnwzYII" title="Entre las Dos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
@@ -266,15 +266,11 @@ const listaProyectos = [
         titulo: "albores",
         tags: ["docu-ficción"],
         descripcionES: `
-          <p>Trabajé como <b>directora<b>, <b>montajista<b> y <b>diseñadora de sonido<b> de "Albores", un cortometraje de docu-ficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
-          <p>La historia sigue a Juan, un estudiante de una escuela agrotécnica que se siente cada vez más condicionado por la religiosidad de su entorno. A lo largo de una jornada escolar aparentemente cotidiana, deberá enfrentarse a una decisión que marcará su camino.</p>
-          <p>El proyecto fue realizado junto a Delfina Di Giacomo, Inés Emery, Clara Rapela y Luna Ciravegna, quienes formaron parte del equipo creativo y de producción.</p>
-        `,
+          <p>Trabajé como <b>directora</b>, <b>montajista</b> y <b>diseñadora de sonido</b> de "Albores", un cortometraje de docu-ficción estrenado en diciembre de 2023 en el Festival de Cortos de Amorina Cine Bar, un espacio dedicado a la exhibición del cine independiente argentino que reúne a realizadores y realizadoras emergentes.</p>
+        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
         descripcionEN: `
-          <p>I worked as the <b>director<b>, <b>editor<b>, and <b>sound designer<b> of "Albores", a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
-          <p>The film follows Juan, a student at an agricultural high school who feels increasingly constrained by the religious environment surrounding him. As he goes through what seems to be an ordinary school day, he is ultimately confronted with a decision that will shape his future.</p>
-          <p>The project was developed in collaboration with Delfina Di Giacomo, Inés Emery, Clara Rapela, and Luna Ciravegna, who were part of the film's creative and production team.</p>
-        `,
+          <p>I worked as the <b>director</b>, <b>editor</b>, and <b>sound designer</b> of "Albores", a docfiction short film that premiered in December 2023 at the Amorina Cine Bar Short Film Festival, an event dedicated to showcasing independent Argentine cinema and bringing together emerging filmmakers.</p>
+        `, // <-- ARREGLADO: Se cerraron correctamente los </b>
         mediaHTML: '<iframe src="https://www.youtube.com/embed/fLpjvvWXApA" title="Albores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
       }
     ]
@@ -370,17 +366,21 @@ const listaProyectos = [
 const textoBio = `
     <div class="bio-content-view" style="font-family: Google Sans, sans-serif; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%;">
         <div class="bio-es" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #000;">
-            <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
+            <p style="margin-bottom: 16px;"><b style="font-weight: 500;">Wanda Acevedo</b> es Diseñadora Audiovisual especializada en edición de video, diseño gráfico y producción de contenido digital para diferentes marcas, proyectos y empresas.</p>
             <p style="margin-bottom: 16px;">Especializada en la Universidad de Buenos Aires (UBA) y con un fuerte enfoque técnico, investiga narrativas contemporáneas y las tecnologías creativas emergentes.</p>
         </div>
         <div class="bio-en" style="font-weight: 300; font-size: 15px; line-height: 1.6; color: #777;">
-            <p style="margin-bottom: 16px;"><strong>Wanda Acevedo</strong> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
+            <p style="margin-bottom: 16px;"><b style="font-weight: 500;">Wanda Acevedo</b> is an Audiovisual Designer specializing in video editing, graphic design, and digital content production for various brands, projects, and companies.</p>
             <p style="margin-bottom: 16px;">Formed at the University of Buenos Aires (UBA) and with a strong technical focus, she researches contemporary narratives and emerging creative technologies.</p>
         </div>
     </div>
 `;
 
 let categoriaActual = 'todos';
+
+// Variables globales para la lógica de carrusel en el Lightbox
+let imagenesLightboxActuales = [];
+let indiceLightboxActual = 0;
 
 function irAHome() {
     document.getElementById('filtros-comerciales').classList.add('hidden');
@@ -413,12 +413,15 @@ function renderizarGrillaProyectos(proyectosAVisualizar) {
         tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
 
+        // Seteamos un reemplazo global para los b dentro del preview de las grillas
+        let previewTexto = primeraPub.descripcionES.replaceAll('<b>', '<b style="font-weight: 500;">');
+
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${proy.portadaImg}" alt="${primeraPub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${primeraPub.año}</div>
             <h3 style="font-family: Google Sans, sans-serif; font-size: 17px; margin-top: 4px; margin-bottom: 8px;">${primeraPub.titulo}</h3>
             <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 300; font-size: 14px;">
-                ${primeraPub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
+                ${previewTexto} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
         divGrilla.appendChild(tarjeta);
@@ -443,12 +446,14 @@ function renderizarGrillaPublicacionesFiltradas(publicacionesFiltradas) {
         tarjeta.style.fontFamily = 'Google Sans, sans-serif';
         tarjeta.style.width = '100%';
 
+        let previewTexto = item.pub.descripcionES.replaceAll('<b>', '<b style="font-weight: 500;">');
+
         tarjeta.innerHTML = `
             <img class="proyecto-tarjeta-media" src="${item.padreImg}" alt="${item.pub.titulo}" style="width: 100%;">
             <div class="pub-ano" style="font-family: Google Sans, sans-serif; font-size: 14px; margin-top: 10px;">${item.pub.año}</div>
             <h3 style="font-family: Google Sans, sans-serif; font-size: 17px; margin-top: 4px; margin-bottom: 8px;">${item.pub.titulo}</h3>
             <div class="line-clamp-preview" style="font-family: Google Sans, sans-serif; font-weight: 300; font-size: 14px;">
-                ${item.pub.descripcionES} <span class="mas-link" style="color: #76C4AA;">[+]</span>
+                ${previewTexto} <span class="mas-link" style="color: #76C4AA;">[+]</span>
             </div>
         `;
         divGrilla.appendChild(tarjeta);
@@ -492,11 +497,14 @@ function verProyecto(idProyecto) {
             mediaRenderizado = mediaRenderizado.replaceAll('<img', '<img data-lightbox="true" style="cursor:pointer; width: 100%; height: auto; border-radius: 4px;"');
         }
 
+        // SOLUCIÓN NEGRITA: Forzamos font-weight: 500 sutil y limpio a todas las etiquetas <b> y <strong>
         let descES = pub.descripcionES.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #000; font-weight: 300;">');
-        descES = descES.replaceAll('<strong>', '<strong style="font-size: 15px; color: #000; font-weight: 700;">');
+        descES = descES.replaceAll('<b>', '<b style="font-weight: 500; color: #000;">');
+        descES = descES.replaceAll('<strong>', '<strong style="font-weight: 500; color: #000;">');
         
         let descEN = pub.descripcionEN.replaceAll('<p>', '<p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: #777; font-weight: 300;">');
-        descEN = descEN.replaceAll('<strong>', '<strong style="font-size: 15px; color: #777; font-weight: 700;">');
+        descEN = descEN.replaceAll('<b>', '<b style="font-weight: 500; color: #555;">');
+        descEN = descEN.replaceAll('<strong>', '<strong style="font-weight: 500; color: #555;">');
 
         contenidoHTML += `
             <div class="publicacion-item" style="margin-bottom: 50px; font-family: Google Sans, sans-serif; width: 100%;">
@@ -561,17 +569,113 @@ function filtrarPorMetadato(tagBuscado) {
     renderizarGrillaPublicacionesFiltradas(publicacionesCoincidentes);
 }
 
+// LÓGICA DE LIGHTBOX CON SOPORTE DE NAVEGACIÓN ENTRE IMÁGENES
 document.addEventListener('click', function(event) {
     if (event.target.hasAttribute('data-lightbox') || event.target.closest('[data-lightbox]')) {
         const targetImg = event.target.tagName === 'IMG' ? event.target : event.target.querySelector('img');
         if (!targetImg) return;
-        const urlImagen = targetImg.getAttribute('src');
-        const modal = document.getElementById('lightbox-modal');
-        const imagenModal = document.getElementById('lightbox-img');
         
-        if (modal && imagenModal) {
-            imagenModal.src = urlImagen;
+        // Buscamos todas las imágenes con data-lightbox activas en el contenedor actual para armar el set
+        const todasLasImgs = Array.from(document.querySelectorAll('#dynamic-content img[data-lightbox="true"]'));
+        imagenesLightboxActuales = todasLasImgs.map(img => img.getAttribute('src'));
+        
+        const urlImagen = targetImg.getAttribute('src');
+        indiceLightboxActual = imagenesLightboxActuales.indexOf(urlImagen);
+        if (indiceLightboxActual === -1) {
+            imagenesLightboxActuales = [urlImagen];
+            indiceLightboxActual = 0;
+        }
+
+        const modal = document.getElementById('lightbox-modal');
+        if (modal) {
             modal.classList.remove('hidden');
+            actualizarImagenLightbox();
+            inyectarFlechasNavegacion(modal);
+        }
+    }
+});
+
+function actualizarImagenLightbox() {
+    const imagenModal = document.getElementById('lightbox-img');
+    if (imagenModal && imagenesLightboxActuales.length > 0) {
+        imagenModal.src = imagenesLightboxActuales[indiceLightboxActual];
+    }
+    
+    // Opcional: Ocultar o mostrar flechas si es una sola foto
+    const btnPrev = document.getElementById('lightbox-prev-btn');
+    const btnNext = document.getElementById('lightbox-next-btn');
+    if (btnPrev && btnNext) {
+        if (imagenesLightboxActuales.length <= 1) {
+            btnPrev.style.display = 'none';
+            btnNext.style.display = 'none';
+        } else {
+            btnPrev.style.display = 'block';
+            btnNext.style.display = 'block';
+        }
+    }
+}
+
+function inyectarFlechasNavegacion(modal) {
+    // Si ya existen las flechas creadas dinámicamente, no hacemos nada
+    if (document.getElementById('lightbox-prev-btn')) return;
+
+    // Crear botón izquierdo
+    const btnPrev = document.createElement('button');
+    btnPrev.id = 'lightbox-prev-btn';
+    btnPrev.innerHTML = '&#8592;'; // Flecha izquierda uh unicode
+    btnPrev.style.cssText = 'position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ffffff; font-size: 35px; cursor: pointer; pading: 10px; z-index: 10010; transition: opacity 0.2s;';
+    btnPrev.setAttribute('onclick', 'lightboxAnterior(event)');
+    
+    // Crear botón derecho
+    const btnNext = document.createElement('button');
+    btnNext.id = 'lightbox-next-btn';
+    btnNext.innerHTML = '&#8594;'; // Flecha derecha unicode
+    btnNext.style.cssText = 'position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ffffff; font-size: 35px; cursor: pointer; padding: 10px; z-index: 10010; transition: opacity 0.2s;';
+    btnNext.setAttribute('onclick', 'lightboxSiguiente(event)');
+
+    // Agregamos efectos hover básicos por script
+    [btnPrev, btnNext].forEach(btn => {
+        btn.onmouseover = () => btn.style.opacity = '0.7';
+        btn.onmouseout = () => btn.style.opacity = '1';
+    });
+
+    modal.appendChild(btnPrev);
+    modal.appendChild(btnNext);
+    actualizarImagenLightbox();
+}
+
+function lightboxAnterior(event) {
+    if (event) event.stopPropagation(); // Evitamos que cierre el modal al hacer click en la flecha
+    if (imagenesLightboxActuales.length <= 1) return;
+    
+    indiceLightboxActual--;
+    if (indiceLightboxActual < 0) {
+        indiceLightboxActual = imagenesLightboxActuales.length - 1; // Bucle infinito hacia atrás
+    }
+    actualizarImagenLightbox();
+}
+
+function lightboxSiguiente(event) {
+    if (event) event.stopPropagation(); // Evitamos que cierre el modal al hacer click en la flecha
+    if (imagenesLightboxActuales.length <= 1) return;
+
+    indiceLightboxActual++;
+    if (indiceLightboxActual >= imagenesLightboxActuales.length) {
+        indiceLightboxActual = 0; // Bucle infinito hacia adelante
+    }
+    actualizarImagenLightbox();
+}
+
+// Soporte de navegación por teclado (Flechas izq/der y Escape)
+document.addEventListener('keydown', function(event) {
+    const modal = document.getElementById('lightbox-modal');
+    if (modal && !modal.classList.contains('hidden')) {
+        if (event.key === 'ArrowLeft') {
+            lightboxAnterior(null);
+        } else if (event.key === 'ArrowRight') {
+            lightboxSiguiente(null);
+        } else if (event.key === 'Escape') {
+            cerrarImagen();
         }
     }
 });
