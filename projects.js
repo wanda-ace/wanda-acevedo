@@ -306,7 +306,7 @@ const listaProyectos = [
   {
     id: "free-flakkaboem-sessions",
     categoria: "freelance",
-    portadaImg: "img/portadas/portada-cero-nueve.png",
+    portadaImg: "img/portadas/portada-flakkaboem.jpg",
     publicaciones: [
       {
         idPub: "free-flak-p1",
